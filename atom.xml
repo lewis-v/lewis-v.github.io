@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-18T15:12:59.955Z</updated>
+  <updated>2018-04-18T15:45:42.189Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Android 语音录制及播放的处理---AudioH</title>
+    <link href="http://yoursite.com/2018/04/18/Android-%E8%AF%AD%E9%9F%B3%E5%BD%95%E5%88%B6%E5%8F%8A%E6%92%AD%E6%94%BE%E7%9A%84%E5%A4%84%E7%90%86-AudioH/"/>
+    <id>http://yoursite.com/2018/04/18/Android-语音录制及播放的处理-AudioH/</id>
+    <published>2018-04-18T15:44:35.000Z</published>
+    <updated>2018-04-18T15:45:42.189Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Android 语音录制及播放的处理,基于MediaPlayer(播放) 和MediaRecorder (录制)&lt;/p&gt;
+&lt;p&gt;github地址：&lt;a href=&quot;https://github.com/lewis-v/AudioH&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/lewis-v/AudioH&lt;/a&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://yoursite.com/categories/Android/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Android Gradle学习笔记</title>

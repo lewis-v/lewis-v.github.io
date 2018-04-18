@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#33363b">
+    <meta name="msapplication-TileColor" content="#33363b">
+    
+    
+    
+    <meta name="keywords" content="Life, ARIA, Hexo">
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-chrome-192x192.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    
+    
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#33363b">
+    
+    
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    
+    
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    
+    
+    <link rel="alternate" href="/atom.xml" title="Lewis-v Blog" type="application/atom+xml" />
+    
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    
+    <link rel="stylesheet" type="text/css" href="/css/sidebar.css">
+    
+    
+<link rel="stylesheet" type="text/css" href="/css/page.css">
+<link rel="stylesheet" type="text/css" href="/css/post.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/atom-one-dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css">
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script defer type="text/javascript" src="/js/util.js"></script>
+    <script defer type="text/javascript" src="/js/scrollspy.js"></script>
+    <script defer type="text/javascript" src="/js/fontawesome-all.min.js"></script>
+    <script defer type="text/javascript" src="/js/lightgallery.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-fullscreen.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-hash.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-pager.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-thumbnail.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-zoom.min.js"></script>
+    
+    <script defer src="/js/busuanzi.pure.mini.js"></script>
+    
+    
+    <script defer type="text/javascript" src="/js/search.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+      var searchPath = "search.xml";
+      if (searchPath.length === 0) {
+        searchPath = "search.xml";
+      }
+      var path = "/" + searchPath;
+      searchFunc(path, "search-input", "search-result");
+    });
+    </script>
+    
+    
+    <script defer type="text/javascript" src="/js/index.js"></script>
+    
+    <script defer type="text/javascript" src="/js/custom.js"></script>
+    <title>Android Gradle学习笔记 | Lewis-v Blog - it's time to go</title>
+  </head>
+  <body itemscope itemtype="http://schema.org/WebPage" lang="zh_CN"  data-spy="scroll" data-target=".list-group">
+    
+<header id="header" class="header">
+  <div class="container">
+    <div class="header-container">
+      <div class="header-title">
+        <h1 class="title"><a href="/">Lewis-v Blog</a></h1>
+        <h2 class="subtitle">it's time to go</h2>
+      </div>
+      <div class="logo">
+        <img src="/images/签名.png" alt="logo">
+      </div>
+    </div>
+    
+<nav id="nav" class="nav">
+  <a id="nav-toggle" class="nav-toggle"><i class="fas fa-bars"></i></a>
+  <ul id="menu">
+    
+    <li><a href="/">首页</a></li>
+    
+    <li><a href="/archives/">归档</a></li>
+    
+    <li><a href="/categories/">分类</a></li>
+    
+    <li><a href="/about/">关于</a></li>
+    
+  </ul>
+</nav>
+
+
+  </div>
+</header>
+
+
+    <main id="main" class="main">
+      <div class="container">
+        <div class="main-container">
+          <div class="content">
+            
+<section id="post" class="post">
+  
+  <article class="post-container card " itemscope itemtype="http://schema.org/Article">
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/18/Android-Gradle学习笔记/">
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+       <meta itemprop="name" content="lewis-v">
+       <meta itemprop="description" content="I am time">
+       <meta itemprop="image" content="/images/header.JPG">
+      </span>
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+       <meta itemprop="name" content="Lewis-v Blog">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">
+       <span class="">Android Gradle学习笔记</span>
+      </h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i> <time title="post-date" itemprop="dateCreated datePublished" datetime="2018-04-18T22:40:41+08:00">2018-04-18</time>
+        </span>
+        
+        
+        
+        <span class="post-meta-divider"> | </span>
+        
+        <span class="post-categories">
+          <i class="far fa-folder-open"></i>
+          
+          
+          <span itemprop="about" itemscope itemtype="http://schema.org/Thing"> <a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a></span>
+          
+          
+        </span>
+        
+        
+        
+        <span class="post-meta-divider"> | </span>
+        
+        
+        <span class="post-comment-count">
+          <i class="far fa-comments"></i> <a href="/2018/04/18/Android-Gradle学习笔记/#comments" itemprop="discussionUrl"><span class="post-comment-count hc-comment-count" data-xid="2018/04/18/Android-Gradle学习笔记/" itemprop="commentsCount"></span></a>
+        </span>
+        
+        
+      </div>
+    </header>
+    <main class="post-body" itemprop="articleBody">
+      <p>gradle使用的脚本语言是Groovy,Groovy完全兼容java<br><a id="more"></a></p>
+<h1 id="DSL"><a href="#DSL" class="headerlink" title="DSL"></a>DSL</h1><p>DSL的意思是领域特定语言,即专注于一个领域的语言,而像java是一种通用全面的语言,而Gradle就是一门DSL,基于Groovy,专注于自动化构建.</p>
+<h1 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h1><p>def 用于参数/方法的定义,定义可不用定义返回类型<br>&lt;&lt; 此符号队伍任务来说相当于doLast,将任务放到任务队列的队尾执行</p>
+<h1 id="Groovy的字符串表示"><a href="#Groovy的字符串表示" class="headerlink" title="Groovy的字符串表示"></a>Groovy的字符串表示</h1><p>Groovy的单引号和双引号都表示字符串,但单引号不具有计算功能,双引号有,如</p>
+<p><img src="/images/Gradle%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01.png" alt="enter description here" title="Gradle学习笔记1.png"></p>
+<p>但单引号和双引号都可以使用”+”连接字符串,如<br><img src="/images/Gradle%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01.png" alt="enter description here" title="Gradle学习笔记2.png"></p>
+<h1 id="Groovy支持java的全部集合类"><a href="#Groovy支持java的全部集合类" class="headerlink" title="Groovy支持java的全部集合类"></a>Groovy支持java的全部集合类</h1><h2 id="List"><a href="#List" class="headerlink" title="List:"></a>List:</h2><p>声名定义<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">def num = [1,2,3,4];//相当于java的List&lt;Interger&gt; num = new ArrayList()&lt;&gt;;</span><br></pre></td></tr></table></figure></p>
+<p>使用时可像数组一样通过下标获取,正数为从0开始算,负数为从末尾开始算<br>num[0]为1    num[-1]为4    num[1..3]为访问1到3位置的数据<br>遍历list使用each<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">num.each&#123;</span><br><span class="line">println it	//it为迭代元素</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h2><p>声名定义(看起来像键值对的数组):<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">def num = [&apos;width&apos;:1,&apos;height&apos;:2];</span><br></pre></td></tr></table></figure></p>
+<p>使用时可使用num[‘width’]和num.width的方式来获取<br>遍历也是使用each,但其迭代的元素it为一个Entry实例<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">num.each&#123;</span><br><span class="line">println &quot;Key:$&#123;it.key&#125;,Value:$&#123;it.value&#125;&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="Groovy的方法调用"><a href="#Groovy的方法调用" class="headerlink" title="Groovy的方法调用"></a>Groovy的方法调用</h1><p>Groocy的方法调用不需要括号如add(1,2)可为add 1,2<br>返回值不用return如<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">def add(int i,int j)&#123;</span><br><span class="line">i+j//此处作为最后一行执行,会被识别为返回的参数</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="实体类bean"><a href="#实体类bean" class="headerlink" title="实体类bean"></a>实体类bean</h1><p>groovy的实体类不需要写get/set方法,在定义参数后,内部会自动有这样个方法,也意味着其外部可读可写,如果不定义参数,直接写get方法,那这个参数为外部只读<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">class Present&#123;</span><br><span class="line">private String name//定义字符串name,可读可写</span><br><span class="line"></span><br><span class="line">public int getAge()&#123;//定义int的age,只读</span><br><span class="line">12</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h1><p>方法传入的参数为一个代码块,在代码块的调用的方法可被指定优先调用那个对象的方法,也就是闭包委托.闭包的关键字为Closure,如上述使用的each传入的为代码块,其中就位闭包,而it为闭包的委托.</p>
+<h2 id="单参数"><a href="#单参数" class="headerlink" title="单参数"></a>单参数</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">task test&#123;</span><br><span class="line">customEach&#123;</span><br><span class="line">println it</span><br><span class="line">&#125;</span><br><span class="line">def customEach(closure)&#123;</span><br><span class="line">for(int i in 1..10)&#123;//遍历1到10</span><br><span class="line">closure(i)//相当于遍历一次就调用一次传进来的代码块,传入的i就为it的值</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="多参数"><a href="#多参数" class="headerlink" title="多参数"></a>多参数</h2><p>而且通过闭包可传出多个参数,其实是传出了一个对象.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">task test&#123;</span><br><span class="line">eachMap&#123;k,v -&gt;//指定多个参数的代表</span><br><span class="line">println &quot;$&#123;k&#125;,$&#123;v&#125;&quot;</span><br><span class="line">&#125;</span><br><span class="line">def eachMap(closure)&#123;</span><br><span class="line"> 	def mapl = [&quot;a&quot;:1,&quot;b&quot;:2]</span><br><span class="line">mapl.each&#123;</span><br><span class="line">closure(it.key,it.value)</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="闭包委托"><a href="#闭包委托" class="headerlink" title="闭包委托"></a>闭包委托</h2><p>闭包中有3个关键字(属性),thisObject(相当于Android的this),owner,delegate,默认下owner和delegate相等,但delegate可被更改,更改后会方法块中的调用会调用其指向的对象.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">preson&#123;</span><br><span class="line">age = 10//此处相当于p.age = 10,p为闭包代理</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">def preson(Closure&lt;Person&gt; closure)&#123;</span><br><span class="line">Preson p = new Preson();</span><br><span class="line">closure.delegate = p</span><br><span class="line">closure.setResolveStrategy(Closure.DELEGATE_FIRST);//设置委托模式优先</span><br><span class="line">closure(p)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="settings-gradle文件"><a href="#settings-gradle文件" class="headerlink" title="settings.gradle文件"></a>settings.gradle文件</h1><p>用于配置工程树,配置工程中要加入构建的工程/模块,并可设置对应工程的路径,不设置就默认为工程跟根路径.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">include &apos;:app&apos;</span><br><span class="line">include &apos;:test&apos;</span><br><span class="line"></span><br><span class="line">project(&apos;:test&apos;).projectDir = new File(&apos;test&apos;)//设置test工程的目录在./test中</span><br></pre></td></tr></table></figure></p>
+<h1 id="build-gradle文件"><a href="#build-gradle文件" class="headerlink" title="build.gradle文件"></a>build.gradle文件</h1><p>每个工程都有一个build文件,用于配置构建时导入的插件或者配合构建参数,其为工程构建的入口,其中有一个根工程的build,在此文件中可统一配置所有子工程的配置.<br>其中allprojects和subprojects都是对子工程的配置,buildProject时对导入的工程的配置,如导入a模块,而a模块需要导入b模块.配置使用的方法基本都是用了闭包,所以也可以在配置的时候输出信息.</p>
+<h1 id="任务依赖"><a href="#任务依赖" class="headerlink" title="任务依赖"></a>任务依赖</h1><p>在进行task时,有时需要不同任务会有依赖关系,所以存在谁前谁后的问题,(关键字dependsOn)如a依赖于b,所以b要先执行完a才执行,如<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">task b&#123;</span><br><span class="line">xxx</span><br><span class="line">&#125;</span><br><span class="line">task a(dependsOn b)&#123;</span><br><span class="line">xxxxx</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>以上任务,a会等b运行完了再运行<br>也可以依赖多个任务,如a依赖b,c任务<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">task c&#123;</span><br><span class="line">xxx</span><br><span class="line">&#125;</span><br><span class="line">task b&#123;</span><br><span class="line">xxx</span><br><span class="line">&#125;</span><br><span class="line">task a&#123;</span><br><span class="line">dependsOn c,b</span><br><span class="line">xxx</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>每个任务在project中都为一个属性,所以可以调用这个属性如<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">c.doLast&#123;</span><br><span class="line">xxx</span><br><span class="line">&#125;</span><br><span class="line">c.doFirst&#123;</span><br><span class="line">xxx</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>此处调用了c的两个方法,他们的first和last时在c任务运行后的</p>
+<h1 id="自定义prohect属性"><a href="#自定义prohect属性" class="headerlink" title="自定义prohect属性"></a>自定义prohect属性</h1><p>使用ext来自定义属性<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ext age = 5//定义一个属性</span><br><span class="line"></span><br><span class="line">ext &#123;//定义多个属性</span><br><span class="line">name = &apos;666&apos;</span><br><span class="line">address = &apos;你很棒&apos;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>定义的属性相当于全局变量</p>
+<h1 id="任务分组和描述"><a href="#任务分组和描述" class="headerlink" title="任务分组和描述"></a>任务分组和描述</h1><p>分组即描述是为了更好的管理这些任务<br>task.group = BasePlugin.BUID_GROUP//将任务分组到BUID_GROUP中<br>task.description = ‘测试用的’//添加任务描述,说明任务的作用</p>
+<h1 id="任务的执行"><a href="#任务的执行" class="headerlink" title="任务的执行"></a>任务的执行</h1><p>每个任务内都有一个List列表,保存的就是任务要执行的action,所以doFirst和doLast是对List添加action在列表的头部或尾部,然后从头到尾执行,这里还有和doSelf是中间,也是任务本身.<br>可以用任务排序来控制任务的执行顺序,听说这个为base版,后期可能更改<br>task.shouldRunAfter(task2)//task建议在task2之后执行,这个用处不大,实际运行可能会也可能不会<br>task.mustRunAfter(task2)//task一定在task2之后执行</p>
+<h1 id="任务启用"><a href="#任务启用" class="headerlink" title="任务启用"></a>任务启用</h1><p>任务中有个enabled参数,用于控制任务是否启用,默认为true启用,设置为false是不执行,并提示跳过此任务<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">task not&#123;</span><br><span class="line">xzxxx</span><br><span class="line">&#125;</span><br><span class="line">not.enabled = false</span><br></pre></td></tr></table></figure></p>
+<h1 id="断言"><a href="#断言" class="headerlink" title="断言"></a>断言</h1><p>groovy中除了可以使用if else来断言,还提供了onlyIf,其作用于任务的条件执行,onlyIf接收一个方法块的返回值,true则执行此任务,否则不执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">task.onlyIf&#123;</span><br><span class="line">Object build = project.property(&quot;build&quot;)</span><br><span class="line">if(build.equals(&quot;666&quot;))&#123;</span><br><span class="line">true</span><br><span class="line">&#125;</span><br><span class="line">false</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>以上任务开启时使用命令传入build参数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./gradlew -p build=666 :task</span><br></pre></td></tr></table></figure></p>
+<h1 id="任务规则"><a href="#任务规则" class="headerlink" title="任务规则"></a>任务规则</h1><p>在gradle任务执行出现错误,无法识别该任务或找不到时,会调用这个规则.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">addRule(&quot;测试规则&quot;)&#123;</span><br><span class="line">String taskName-&gt;</span><br><span class="line">task(taskName)&#123;</span><br><span class="line">println &quot;测试出现个提示&quot;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">findByName(&quot;666&quot;)//查找时,出现无此任务时会触发规则,发出提示</span><br></pre></td></tr></table></figure></p>
+<h1 id="gradle插件"><a href="#gradle插件" class="headerlink" title="gradle插件"></a>gradle插件</h1><h2 id="应用二进制插件"><a href="#应用二进制插件" class="headerlink" title="应用二进制插件"></a>应用二进制插件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apply plugin:a//应用a插件,这里的a建议用全限定名</span><br></pre></td></tr></table></figure>
+<h2 id="脚本插件"><a href="#脚本插件" class="headerlink" title="脚本插件"></a>脚本插件</h2><p>将脚本加载到本gradle中<br>build.gradle<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apply from:&apos;a&apos;</span><br></pre></td></tr></table></figure></p>
+<p>a.gradle<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ext&#123;</span><br><span class="line">version = &apos;1.0.0&apos;</span><br><span class="line">name = &apos;test&apos;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>相当于build中就有了a中的参数</p>
+<p>apply也可使用闭包<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">apply &#123;</span><br><span class="line">plugin :xxx</span><br><span class="line">plugin : xxx</span><br><span class="line">...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="应用第三方插件"><a href="#应用第三方插件" class="headerlink" title="应用第三方插件"></a>应用第三方插件</h2><p>在应用二进制第三方插件时,需要配置buildscript中的dependencies中的classpath,指定使用的gradle版本.若此插件被官网托管了就可以不用设置.<br><img src="/images/Gradle%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01.png" alt="enter description here" title="Gradle学习笔记3.png"></p>
+<h2 id="依赖第三方"><a href="#依赖第三方" class="headerlink" title="依赖第三方"></a>依赖第三方</h2><p>compile 编译时依赖<br>runtime 运行时依赖<br>testCompile 编译测试时依赖,打包不会依赖进去<br>testRuntime 运行测试时依赖<br>archives 项目发布构建(jar)依赖<br>default 默认依赖</p>
+<p>也可以指定一个源集依赖<br>mainCompile   //main源集依赖</p>
+<p>compile project(‘:a’)//依赖a工程<br>compile files(‘libs/a.jar’)//依赖jar包<br>compile fileTree(dir:’libs’,include:’*.jar’)//依赖libs目录下所有jar包</p>
+<h2 id="源集"><a href="#源集" class="headerlink" title="源集"></a>源集</h2><p>sourceSets,用于设置资源的配置,如资源所在的路径和编译后的路径<br>其中的属性<br>name//只读,如main<br>output.classesDir//指定源集编译后的class目录<br>output.resourcess//指定源集编译后生成的资源目录<br>compileClasspath//编译指定源集时所需的classpath<br>java//指定源集java源文件<br>java.srcDirs//指定源集java源文件所在目录<br>resources//指定源集的资源文件<br>resources.secDirs//指定源集的资源文件目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sourceSets&#123;</span><br><span class="line">main&#123;</span><br><span class="line">java&#123;</span><br><span class="line">scrDir &apos;src/java&apos; // 设置main源集的java源文件的目录</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/images/Gradle%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01.png" alt="enter description here" title="Gradle学习笔记4.png"></p>
+<p><img src="/images/Gradle%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01.png" alt="enter description here" title="Gradle学习笔记5.png"></p>
+<h1 id="Android的Gradle"><a href="#Android的Gradle" class="headerlink" title="Android的Gradle"></a>Android的Gradle</h1><h2 id="各属性"><a href="#各属性" class="headerlink" title="各属性"></a>各属性</h2><p>compileSdkVersion//编译的androidSDK版本,可为int或String<br>BuildToosVersion//构建版本,23.0.1<br>defaultConfig//默认配置,配置生产模式,多渠道打包<br>buildTypes//配置源文件资源文件,混淆,文件目录</p>
+<h3 id="defaultConfig配置"><a href="#defaultConfig配置" class="headerlink" title="defaultConfig配置"></a>defaultConfig配置</h3><p>applicationId//指定生成的报名,默认为null,会从manifest中读取<br>minSdkVersion//App支持的最低Android版本<br>targetSdkVersion//App是基于那个android版本开发的,默认为null,会从manifest读取<br>versionCode//App内部版本,给内部人员看的<br>versionName//与versionCode类似,但其是给用户看的外部版本<br>testApplicationId//测试App的包名,一般使用默认的,applicationId+’test’<br>testInstructionRunner//配置单元测试使用的Runner,默认为android.test.InstrumentationTestRunner<br>proguardFile//设置一个混淆文件<br>proguardFiles//设置多个混淆文件<br>signingConfig//配置签名信息<br>signingConfigs//配置多个签名信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">android&#123;</span><br><span class="line">compileSdkVersion 23</span><br><span class="line">buildToolsVersion &quot;23.0.1&quot;</span><br><span class="line"></span><br><span class="line">signingConfigs&#123;</span><br><span class="line">release&#123;//正式版</span><br><span class="line">storeFile file(&quot;myreleasekey.keystore&quot;)//设置签名文件</span><br><span class="line">storePassword &quot;password&quot;//签名的store密码</span><br><span class="line">keyAlias &quot;Alias&quot;//签名的Alias</span><br><span class="line">keyPassword &quot;password&quot;//签名的key密码</span><br><span class="line">&#125;</span><br><span class="line">debug&#123;//debug版</span><br><span class="line">....</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">defaultConfig&#123;</span><br><span class="line">applicationId &quot;cn.com.lewis_v.test&quot;</span><br><span class="line">minSdkVersion 14</span><br><span class="line">targetSdkVersion 23</span><br><span class="line">versionCode 1</span><br><span class="line">versionName &quot;1.0.1&quot;</span><br><span class="line">//signingConfig signingConfigs.debug//使用Debug签名</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">buildTypes&#123;</span><br><span class="line">release&#123;</span><br><span class="line">signingConfig signingConfigs.release//此处也能设置签名</span><br><span class="line">&#125;</span><br><span class="line">debug&#123;</span><br><span class="line">signingConfig.signingConfigs.debug</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="buildTypes配置"><a href="#buildTypes配置" class="headerlink" title="buildTypes配置"></a>buildTypes配置</h3><p>applicationIdSuffix//配置applicationId的后缀,相当于改包名了<br>debuggable//配置生成的apk是否可调试<br>jniDebuggable//配置生成的apk是否可进行jni调试<br>minifyEnabled//是否启用混淆<br>multiDexEnabled//是否启用分包,方法超过65535时需要拆分多个包<br>proguardFile//配置混淆文件<br>proguardFile//配置多个混淆文件<br>shrinkResources//是否自动清理未使用的资源,默认false<br>signingConfig//配置签名信息<br>testFunctionalTest//是否为功能测试<br>testHandleProfiling//是否启用分析功能<br>useJack//是否启用,新的编译器,这个编译器更快,但是目前还不成熟</p>
+<p>可以看到buildTypes和defaultConfig有些属性重复了,但一般默认配置在前,然后在buildType中根据不同渠道去修改相关属性,未设置的就是用默认配置</p>
+<h3 id="zipalign优化"><a href="#zipalign优化" class="headerlink" title="zipalign优化"></a>zipalign优化</h3><p>android提供的整理优化apk的工具,可提高运行效率,降低内存使用,使用方法很简单<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">android&#123;</span><br><span class="line">buildTypes&#123;</span><br><span class="line">release&#123;</span><br><span class="line">zipAlignEnabled true//启用zipAlign</span><br><span class="line">&#125;</span><br><span class="line">debug&#123;</span><br><span class="line">...</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="使用共享库"><a href="#使用共享库" class="headerlink" title="使用共享库"></a>使用共享库</h1><p>如在6.0之后httpClient被删除了,要使用的话需要手动添加共享库,build.gradle中为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">android&#123;</span><br><span class="line">useLibrary(&apos;org.apache.http.legacy&apos;)</span><br><span class="line">....</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>manifest.xml,这里不写不会出错<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;uses-library</span><br><span class="line">android:name=&quot;org.apache.http.legacy&quot;</span><br><span class="line">android:required=&quot;true&quot;</span><br></pre></td></tr></table></figure></p>
+<h1 id="gradle中使用命令行"><a href="#gradle中使用命令行" class="headerlink" title="gradle中使用命令行"></a>gradle中使用命令行</h1><p>gradle提供了exec来执行shell命令,<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">def stdout = new ByteArrayOutputStream()</span><br><span class="line">exec&#123;</span><br><span class="line">commandLine &apos;git&apos;,&apos;tag&apos;,&apos;--list&apos;</span><br><span class="line">standardOutput = stdout//获取命令执行的返回</span><br><span class="line">&#125;</span><br><span class="line">return stdout.toString()</span><br></pre></td></tr></table></figure></p>
+<h1 id="动态设置Manifest"><a href="#动态设置Manifest" class="headerlink" title="动态设置Manifest"></a>动态设置Manifest</h1><p>可使用Gradle动态替换manifest中${}占位符<br>manifest.xml<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta-data android:value=&quot;$&#123;TEST&#125;&quot; android:name=&quot;test&quot;/&gt;</span><br></pre></td></tr></table></figure></p>
+<p>在gradle中使用manifestPlaceholders来替换<br>gradle<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">productFlavors&#123;</span><br><span class="line">google&#123;</span><br><span class="line">manifestPlaceholders.put(&quot;TEST&quot;,&quot;google&quot;)</span><br><span class="line">&#125;</span><br><span class="line">baidu&#123;</span><br><span class="line">manifestPlaceholders.put(&quot;TEST&quot;,&quot;baidu&quot;)</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>可使用遍历所有productFlavors来替换,这样可能没那么灵活,但是对于很多渠道且不通点可在productFlavors中获取的时候,使用会很方便<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">productFlavors.all&#123;</span><br><span class="line">google&#123;</span><br><span class="line">&#125;</span><br><span class="line">baidu&#123;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">productFlavors.all&#123;flavor-&gt;</span><br><span class="line">manifestPlaceholders.put(&quot;TEST&quot;,name)//此处的那么是闭包名/任务名,也就是上面的google和baidu</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="BuildConfig"><a href="#BuildConfig" class="headerlink" title="BuildConfig"></a>BuildConfig</h1><p>BuildConfig中包含了基本版本信息,如版本号,渠道,是否为DEBUG模式,其不可修改,而且是自动生成的</p>
+<p>如平常获取包名使用context.getPackageName(),这里面实现较为复杂,性能不高,而使用BuildConfig.APPLICATION_ID获取到的就很方便,且其为一个全局的静态变量,获取的性能高</p>
+<p>而其中的BuildConfig.DEBUG,标记是否为DEBUG模式,是则为true,不是则为false</p>
+<p>当然也可以在构建的时候向BuildConfig加入我们自定义的参数,格式为:<br>BuildConfigField ‘type’,’name’,’value’//依次为类型,参数名,参数值<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">buildTypes&#123;</span><br><span class="line">release&#123;</span><br><span class="line">BuildConfigField &apos;String&apos;,&apos;HOST&apos;,&apos;&quot;http://www.baidu.com&quot;&apos;</span><br><span class="line">&#125;</span><br><span class="line">debug&#123;</span><br><span class="line">BuildConfigField &apos;String&apos;,&apos;HOST&apos;,&apos;&quot;http://www.google.com&quot;&apos;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这样,在正式包下,BuildConfig.HOST的值为baidu的,测试包下为google,这里需要注意的是参数值为String的需要有双引号’”xxxx”‘,如果写成了’xxx’,会出错,原因是他在文件中会写成<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">public static final String HOST = www.baidu.com;//这样会出错,因为后面的不会被识别为字符串</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">public static final String HOST = &quot;www.baidu.com&quot;;//这样才是正确的</span><br></pre></td></tr></table></figure>
+<h1 id="自定义资源文件的内容"><a href="#自定义资源文件的内容" class="headerlink" title="自定义资源文件的内容"></a>自定义资源文件的内容</h1><p>一般使用的资源文件,如string.xml,color.xml等,都可以在gradle中动态修改,在buildTypes和productFlavors中都可以修改<br>使用resValue ‘type’,’name’,’value’//这里和BuildConfig类似,type为资源类型,如string,name是资源中的标识名字,value是要设置为什么值<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">productFlavors&#123;</span><br><span class="line">google&#123;</span><br><span class="line">resValue &apos;string&apos;,&apos;app_name&apos;,&apos;google&apos;</span><br><span class="line">&#125;</span><br><span class="line">baidu&#123;</span><br><span class="line">resvalue &apos;string&apos;,&apos;app_name&apos;,&apos;baidu&apos;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>上述代码,可在不同渠道下,修改string.xml中的app_name的值</p>
+<h1 id="JAVA编译选项"><a href="#JAVA编译选项" class="headerlink" title="JAVA编译选项"></a>JAVA编译选项</h1><p>为设置java编译的JDK版本,文件编码,在android{}中提供了compileOption来设置这些,其中只提供了三个属性encoding(编码格式),sourceCompatibility和targetCompatibility为JDK版本号<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">android&#123;</span><br><span class="line">compileOptions&#123;</span><br><span class="line">encoding = &apos;utf-8&apos;</span><br><span class="line">sourceCompatibility = JavaVersion.VERSION_1_8</span><br><span class="line">targetCompatibility = JavaVersion.VERSION_1_8</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="adb操作配置"><a href="#adb操作配置" class="headerlink" title="adb操作配置"></a>adb操作配置</h1><p>gradle中提供了对adb命令的配置,其中配置的属性为两个timeOutInMs(超时),installOptions(安装配置)<br>这个也是android{}中提供的adbOptions设置的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">android&#123;</span><br><span class="line">adbOptions&#123;</span><br><span class="line">timeOutInMs = 5*1000//5秒超时</span><br><span class="line">installOptions &apos;-r&apos;,&apos;-s&apos;//安装配置</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>其中timeOutInMs为adb命令反应超时,在指定时间内无反馈则视为超时,报错CommandRejectException<br>installOptions安装的命令配置,<br>-l:锁定该应用程序;<br>-r:强制安装;<br>-t:允许测试包;<br>-s:安装到SD卡上;<br>-d:允许降级安装;-<br>g:授予运行时权限;</p>
+<h1 id="dex选项"><a href="#dex选项" class="headerlink" title="dex选项"></a>dex选项</h1><p>配置dex命令运行的选项<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">android&#123;</span><br><span class="line">javaMaxHeapSize &quot;2g&quot;//调用dx命令是,分配最大的堆内存,看电脑的配置</span><br><span class="line">incremental true//开启增量模式,默认为false</span><br><span class="line">jumboMode true//开启jumbo模式,用于突破65535方法数限制</span><br><span class="line">threadCount 2//运行dx命令时的线程数</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="资源自动清理"><a href="#资源自动清理" class="headerlink" title="资源自动清理"></a>资源自动清理</h1><p>在工程中,会应用第三方资源或有自己的代码不使用的,所以在gradle中提供打包时不将无用资源打包的设置</p>
+<h2 id="shrink"><a href="#shrink" class="headerlink" title="shrink"></a>shrink</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">android&#123;</span><br><span class="line">buildTypes&#123;</span><br><span class="line">release&#123;</span><br><span class="line">shrinkResources true//开启自动清理,默认为false</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>开启很简单,但是其清理会清理未被引用的资源,但是有些使用反射的会识别不到,所以gradle提供了keep文件来设置不清理的文件,res/raw/keep.xml(不存在需要自己新建文件)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span><br><span class="line">&lt;resources xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;</span><br><span class="line">tools:keep=&quot;@layout/xxx*,@layout/xx&quot;</span><br><span class="line">tools:shrinkMode=&quot;safe&quot;</span><br><span class="line">/&gt;</span><br></pre></td></tr></table></figure></p>
+<p>其中keep为不清理文件,支持*通配符,用逗号分隔文件<br>shrinkMode为清理模式,默认safe,一般用safe就好了</p>
+<h2 id="resConfig"><a href="#resConfig" class="headerlink" title="resConfig"></a>resConfig</h2><p>resConfig可配置只需要什么资源<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">android&#123;</span><br><span class="line">defaultConfig&#123;</span><br><span class="line">resConfig &apos;zh&apos;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="修改发布的aar包"><a href="#修改发布的aar包" class="headerlink" title="修改发布的aar包"></a>修改发布的aar包</h1><p>修改发布的arr包<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">android&#123;</span><br><span class="line">defaultPublishConfig &quot;dubug&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>发布多个arr包<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">android&#123;</span><br><span class="line">publishNonDefault true//开启多个arr包</span><br><span class="line">&#125;</span><br><span class="line">dependencies&#123;</span><br><span class="line">flavo1Compile project(path:&apos;:lib1&apos;,configuration:&apos;flavor1Release&apos;)</span><br><span class="line">flavo2Compile project(path:&apos;:lib1&apos;,configuration:&apos;flavor2Release&apos;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="Junit测试"><a href="#Junit测试" class="headerlink" title="Junit测试"></a>Junit测试</h1><p>这个好像也叫单元测试,针对纯java的测试<br>使用单元测试需要导入Junit依赖,不过一般工程都自动导入了.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">dependencies &#123;</span><br><span class="line">    testImplementation &apos;junit:junit:4.12&apos;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>在java目录下有三个包,其中有一个为test的另两个为主程序和androidTest(这是android环境的测试)<br>test包下的就是单元测试方法的编辑<br>例如要测试一个自己的方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public class TestUtil &#123;</span><br><span class="line">    public String get()&#123;</span><br><span class="line">        return &quot;777&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>在test中新建一个类用于单元测试MyTest.java,这个代码不会加入apk包中<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">import org.junit.Test;</span><br><span class="line">import static org.junit.Assert.*;</span><br><span class="line"></span><br><span class="line">public class MyTest &#123;</span><br><span class="line">    @Test</span><br><span class="line">    public void test()&#123;</span><br><span class="line">        assertEquals(new TestUtil().get(),&quot;666&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>其中@Test为声名此方法为测试方法,声名后再单元测试的时候会调用此方法进行测试<br>还有assert系列方法,这里的assertEquals是判断两个参数是否相同,不同会有错误提示<br>在命令框使用 gradle test 进行单元测试,测试结果会在app/build/reports/tests/testDebugUnitTest/classes中已HTML的形式保存,这了一个测试类会生成一个HTML文件</p>
+<h1 id="测试配置"><a href="#测试配置" class="headerlink" title="测试配置"></a>测试配置</h1><p>可配置测试结果数据的目录<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">android&#123;</span><br><span class="line">testOptions&#123;</span><br><span class="line">reportDir = &quot;$project.buildDir/app/report&quot;//$project.buildDir为工程更目录</span><br><span class="line">resultsDir = &quot;$project.buildDir/app/result&quot;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="代码覆盖率"><a href="#代码覆盖率" class="headerlink" title="代码覆盖率"></a>代码覆盖率</h1><p>检测测试用例的覆盖率<br>需要在buildTypes中开启testCoverageEnabled,并导入jacoco<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">apply plugin: &apos;jacoco&apos;</span><br><span class="line">...</span><br><span class="line">android&#123;</span><br><span class="line">...</span><br><span class="line">buildTypes&#123;</span><br><span class="line">debug&#123;</span><br><span class="line">testCoverageEnabled true</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">...</span><br><span class="line">&#125;</span><br><span class="line">...</span><br><span class="line">jacoco&#123;</span><br><span class="line">    toolVersion = &quot;0.7.1.201405082137&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>使用命令进行测试 gradle createDebugCoverageReport<br>结果在app\build\reports\coverage\debug\index.html中</p>
+<h1 id="Lint测试"><a href="#Lint测试" class="headerlink" title="Lint测试"></a>Lint测试</h1><p>检查哪些代码没被使用,哪些使用新API等,生成一个报告,告诉哪里需要优化.<br>在gradle中使用lintOptions进行配置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">android&#123;</span><br><span class="line">lintOptions&#123;</span><br><span class="line">abortOnError true//发现错误是否退出构建</span><br><span class="line">absolutePaths false//错误的输出是否显示绝对路径,默认为相对路径</span><br><span class="line">check &apos;NewApi&apos;//设置需要检测哪些Lint检查,具体项目使用命令查看lint --list</span><br><span class="line">checkAllWarning true//是否检测所有警告的issue</span><br><span class="line">checkReleaseBuilds true//在release中是否检测致命错误,出现错误终止构建</span><br><span class="line">disable &apos;NewApi&apos;//关闭哪些issue检查</span><br><span class="line">enable &apos;NewApi&apos;//开启哪些检查</span><br><span class="line">explainIssues true//错误报告是否包含解释说明</span><br><span class="line">htmlOutput new File(&quot;xxx&quot;)//配置Html报告的输出路径</span><br><span class="line">htmlReport true//是否生成html报告</span><br><span class="line">ignoreWarnings false//是否忽略警告级别的检查</span><br><span class="line">lintConfig new File(&quot;xxx&quot;)//指定Lint的配置文件,一个Xml文件</span><br><span class="line">noLines true//错误信息中,是否不包含源代码中的行号</span><br><span class="line">quiet false//是否安静模式,安静模式不会显示分析进度</span><br><span class="line">severityOverrides//返回一个Map结果,内容为个issue的优先级</span><br><span class="line">showAll true//是否显示全部输出,不为true,较长的信息会被截断</span><br><span class="line">textOutput new File(&quot;xxx&quot;)//生成text报告的路径</span><br><span class="line">textReport false//是否生成text报告</span><br><span class="line">warningAsErrors false//所有警告是否当成错误处理</span><br><span class="line">xmlOutput new File(&quot;xxx&quot;)//xml报告输出路径</span><br><span class="line">xmlReport true//是否生成xml报告</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="本笔记是学习《Android-Gradle-权威指南》作的笔记，当中有些内容可能错误或描述不清晰的，敬请谅解"><a href="#本笔记是学习《Android-Gradle-权威指南》作的笔记，当中有些内容可能错误或描述不清晰的，敬请谅解" class="headerlink" title="本笔记是学习《Android Gradle 权威指南》作的笔记，当中有些内容可能错误或描述不清晰的，敬请谅解~~"></a>本笔记是学习《Android Gradle 权威指南》作的笔记，当中有些内容可能错误或描述不清晰的，敬请谅解~~</h3>
+    </main>
+    <footer class="post-footer">
+      
+      
+    </footer>
+  </article>
+  
+  
+<div class="reward" id="reward">
+  <p>坚持原创技术分享，您的鼓励将是我继续前进的动力！</p>
+  <button id="reward-button" class="button" disable="enable">打赏</button>
+  <div id="qr" class="qr" style="display: none;">
+    
+    <div id="wechat">
+      <img id="wechat_qr" src="/images/WeChatPay.png" alt="微信支付"/>
+      <span>微信支付</span>
+    </div>
+    
+    
+    <div id="alipay">
+      <img id="alipay_qr" src="/images/AliPay.jpg" alt="支付宝"/>
+      <span>支付宝</span>
+    </div>
+    
+    
+  </div>
+</div>
+
+
+  
+  
+  <div class="post-nav">
+    
+    <div class="post-nav-next post-nav-item">
+      <a href="/2018/04/18/自定义YCardLayout/" rel="next" title="自定义YCardLayout">
+        <i class="fas fa-angle-left"></i>
+        <span class="nav-title">自定义YCardLayout</span>
+      </a>
+    </div>
+    
+    
+  </div>
+  
+  
+  
+
+<div class="comments" id="comments">
+  
+  
+  <div id="hypercomments_widget"></div>
+  
+  <script type="text/javascript">
+  _hcwp = window._hcwp || [];
+  _hcwp.push({ widget: "Bloggerstream", widget_id: 1, selector: ".hc-comment-count", label: "{\%COUNT%\}" });
+  
+  _hcwp.push({ widget:"Stream", widget_id: 1, xid: "2018/04/18/Android-Gradle学习笔记/" });
+  
+  (function() {
+    if ("HC_LOAD_INIT" in window)
+      return;
+    HC_LOAD_INIT = true;
+    var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+    var hcc = document.createElement("script");
+    hcc.type = "text/javascript";
+    hcc.async = true;
+    hcc.src = ("https:" === document.location.protocol ? "https" : "http") + "://w.hypercomments.com/widget/hc/1/"+lang+"/widget.js";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hcc, s.nextSibling);
+  })();
+  </script>
+  
+</div>
+
+
+
+  
+</section>
+
+          </div>
+          
+          
+          
+<aside class="sidebar" id="sidebar">
+  
+  <div class="search">
+    <div class="form-group">
+      <i class="fas fa-search"></i> <input type="text" id="search-input" name="q" results="0" placeholder="搜索" class="form-control"/>
+    </div>
+  </div>
+  <div class="search-result-box" id="search-result"></div>
+  
+  
+<div class="info sidebar-item" id="info">
+  
+  <img class="author-avatar" src="/images/header.JPG" alt="lewis-v">
+  
+  <p class="author-name">lewis-v</p>
+  <p class="author-description"> I am time</p>
+  <div class="site-count">
+    
+    <div class="archives-count">
+      <p>归档</p>
+      <p><a href="/archives/">5</a></p>
+    </div>
+    
+    
+    
+    <span class="site-count-divider"> | </span>
+    
+    <div class="categories-count">
+      <p>分类</p>
+      <p><a href="/categories/">1</a></p>
+    </div>
+    
+    
+  </div>
+  
+  <div class="rss">
+    <a class="rss-link button sidebar-item" href="/atom.xml"><i class="fas fa-rss"></i> RSS</a>
+  </div>
+  
+</div>
+
+
+  <div class="sidebar-sticky">
+    
+    
+
+
+
+
+<hr>
+<div class="post-toc sidebar-item" id="toc-div">
+  <p><i class="fas fa-list-ol"></i> 文章目录</p>
+  <div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#DSL"><span class="toc-text">DSL</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#基本用法"><span class="toc-text">基本用法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Groovy的字符串表示"><span class="toc-text">Groovy的字符串表示</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Groovy支持java的全部集合类"><span class="toc-text">Groovy支持java的全部集合类</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#List"><span class="toc-text">List:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Map"><span class="toc-text">Map</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Groovy的方法调用"><span class="toc-text">Groovy的方法调用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#实体类bean"><span class="toc-text">实体类bean</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#闭包"><span class="toc-text">闭包</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#单参数"><span class="toc-text">单参数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#多参数"><span class="toc-text">多参数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#闭包委托"><span class="toc-text">闭包委托</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#settings-gradle文件"><span class="toc-text">settings.gradle文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#build-gradle文件"><span class="toc-text">build.gradle文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#任务依赖"><span class="toc-text">任务依赖</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#自定义prohect属性"><span class="toc-text">自定义prohect属性</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#任务分组和描述"><span class="toc-text">任务分组和描述</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#任务的执行"><span class="toc-text">任务的执行</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#任务启用"><span class="toc-text">任务启用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#断言"><span class="toc-text">断言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#任务规则"><span class="toc-text">任务规则</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#gradle插件"><span class="toc-text">gradle插件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#应用二进制插件"><span class="toc-text">应用二进制插件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#脚本插件"><span class="toc-text">脚本插件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#应用第三方插件"><span class="toc-text">应用第三方插件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#依赖第三方"><span class="toc-text">依赖第三方</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#源集"><span class="toc-text">源集</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Android的Gradle"><span class="toc-text">Android的Gradle</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#各属性"><span class="toc-text">各属性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#defaultConfig配置"><span class="toc-text">defaultConfig配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#buildTypes配置"><span class="toc-text">buildTypes配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#zipalign优化"><span class="toc-text">zipalign优化</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#使用共享库"><span class="toc-text">使用共享库</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#gradle中使用命令行"><span class="toc-text">gradle中使用命令行</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#动态设置Manifest"><span class="toc-text">动态设置Manifest</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#BuildConfig"><span class="toc-text">BuildConfig</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#自定义资源文件的内容"><span class="toc-text">自定义资源文件的内容</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#JAVA编译选项"><span class="toc-text">JAVA编译选项</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#adb操作配置"><span class="toc-text">adb操作配置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#dex选项"><span class="toc-text">dex选项</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#资源自动清理"><span class="toc-text">资源自动清理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#shrink"><span class="toc-text">shrink</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#resConfig"><span class="toc-text">resConfig</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#修改发布的aar包"><span class="toc-text">修改发布的aar包</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Junit测试"><span class="toc-text">Junit测试</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#测试配置"><span class="toc-text">测试配置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#代码覆盖率"><span class="toc-text">代码覆盖率</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Lint测试"><span class="toc-text">Lint测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#本笔记是学习《Android-Gradle-权威指南》作的笔记，当中有些内容可能错误或描述不清晰的，敬请谅解"><span class="toc-text">本笔记是学习《Android Gradle 权威指南》作的笔记，当中有些内容可能错误或描述不清晰的，敬请谅解~~</span></a></li></ol></li></ol></li></ol></div>
+</div>
+
+
+
+    
+    
+    
+<hr>
+<div class="social-link sidebar-item">
+  <p><i class="far fa-address-card"></i> 社交链接</p>
+  <ul>
+    
+    <li><i class="fab fa-github"></i> <a href="https://github.com/" target="_blank">GitHub</a></li>
+    
+    <li><i class="fas fa-copyright"></i> <a href="https://blog.csdn.net/qq_38713396" target="_blank">CSDN</a></li>
+    
+  </ul>
+</div>
+
+
+    
+    
+    
+<hr>
+<div class="blogroll sidebar-item">
+  <p><i class="fas fa-link"></i> 友情链接</p>
+  <ul>
+    
+    <li><a href="https://developer.mozilla.org/" target="_blank">MDN</a></li>
+    
+    <li><a href="https://mozilla.github.io/nunjucks/" target="_blank">Nunjucks</a></li>
+    
+    <li><a href="http://stylus-lang.com/" target="_blank">Stylus</a></li>
+    
+  </ul>
+</div>
+
+
+    
+  </div>
+</aside>
+
+
+          
+        </div>
+      </div>
+    </main>
+    
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="back-to-top">
+      <a id="back-to-top"><i class="fas fa-angle-double-up"></i></a>
+    </div>
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="copyright">
+          <span class="author">lewis-v</span>
+          <span class="year"><i class="far fa-copyright"></i> 2018</span>
+          
+        </div>
+        
+        
+<div class="busuanzi">
+  <span id="busuanzi_container_site_pv"><i class="fas fa-eye"></i> <span id="busuanzi_value_site_pv"></span></span>
+  <span id="busuanzi_container_site_uv"><i class="fas fa-user"></i> <span id="busuanzi_value_site_uv"></span></span>
+  <span id="busuanzi_container_page_pv"><i class="far fa-file-alt"></i> <span id="busuanzi_value_page_pv"></span></span>
+</div>
+
+
+        
+      </div>
+      <div class="footer-right">
+        <div class="custom-info">
+          
+          托管于 <i class="fab fa-github-alt"></i> <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
+          
+        </div>
+        <div class="powered-by">
+          由 <a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank">ARIA</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  </body>
+</html>

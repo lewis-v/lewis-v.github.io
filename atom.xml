@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Lewis-v Blog</title>
+  <icon>https://www.gravatar.com/avatar/b47b66f425624acc120ee21a6ca28620</icon>
+  <subtitle>it&#39;s time to go</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-04-18T15:12:59.955Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>lewis-v</name>
+    <email>605788229@qq.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Android Gradle学习笔记</title>
+    <link href="http://yoursite.com/2018/04/18/Android-Gradle%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2018/04/18/Android-Gradle学习笔记/</id>
+    <published>2018-04-18T14:40:41.000Z</published>
+    <updated>2018-04-18T15:12:59.955Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;gradle使用的脚本语言是Groovy,Groovy完全兼容java&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://yoursite.com/categories/Android/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>自定义YCardLayout</title>
+    <link href="http://yoursite.com/2018/04/18/%E8%87%AA%E5%AE%9A%E4%B9%89YCardLayout/"/>
+    <id>http://yoursite.com/2018/04/18/自定义YCardLayout/</id>
+    <published>2018-04-18T14:40:22.000Z</published>
+    <updated>2018-04-18T15:12:43.278Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这是一个卡片式滑动的控件&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://yoursite.com/categories/Android/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>滚动广告栏,自动滚动ViewPager--FlowView</title>
+    <link href="http://yoursite.com/2018/04/18/%E6%BB%9A%E5%8A%A8%E5%B9%BF%E5%91%8A%E6%A0%8F-%E8%87%AA%E5%8A%A8%E6%BB%9A%E5%8A%A8ViewPager-FlowView/"/>
+    <id>http://yoursite.com/2018/04/18/滚动广告栏-自动滚动ViewPager-FlowView/</id>
+    <published>2018-04-18T14:40:03.000Z</published>
+    <updated>2018-04-18T15:12:18.266Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;  好久都没时间写博客了,我都忘了博客是什么样的了,这次刚好找了点时间回来写写,刚好把最近做的东西来分享给有需要的人~这次带来的时自动滚动的ViewPager,并且将封装了小圆点功能&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://yoursite.com/categories/Android/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>EventBus事件总线的实现</title>
+    <link href="http://yoursite.com/2018/04/18/EventBus%E4%BA%8B%E4%BB%B6%E6%80%BB%E7%BA%BF%E7%9A%84%E5%AE%9E%E7%8E%B0/"/>
+    <id>http://yoursite.com/2018/04/18/EventBus事件总线的实现/</id>
+    <published>2018-04-18T14:36:41.000Z</published>
+    <updated>2018-04-18T14:55:37.417Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Y事件总线:基于java的Observe和Observable实现的事件总线&lt;br&gt;github地址:&lt;a href=&quot;https://github.com/lewis-v/YEventBus&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/lewis-v/YEventBus&lt;/a&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://yoursite.com/categories/Android/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello~</title>
+    <link href="http://yoursite.com/2018/04/14/Hello/"/>
+    <id>http://yoursite.com/2018/04/14/Hello/</id>
+    <published>2018-04-14T12:55:37.000Z</published>
+    <updated>2018-04-18T07:05:59.779Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre&gt;&lt;code&gt;欢迎来到,Lewis_v
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>

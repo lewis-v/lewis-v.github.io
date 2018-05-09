@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-18T15:45:42.189Z</updated>
+  <updated>2018-05-09T02:36:05.737Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Android好多好多的Drawable</title>
+    <link href="http://yoursite.com/2018/05/09/Android%E5%A5%BD%E5%A4%9A%E5%A5%BD%E5%A4%9A%E7%9A%84Drawable/"/>
+    <id>http://yoursite.com/2018/05/09/Android好多好多的Drawable/</id>
+    <published>2018-05-09T02:33:53.000Z</published>
+    <updated>2018-05-09T02:36:05.737Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;Android中提供了很多的Drawable,一般我们都是用来当做背景的,其实他还有很多其他的用途….&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://yoursite.com/categories/Android/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Android 语音录制及播放的处理---AudioH</title>

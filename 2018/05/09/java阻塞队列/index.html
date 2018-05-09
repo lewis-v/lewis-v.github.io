@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#33363b">
+    <meta name="msapplication-TileColor" content="#33363b">
+    
+    
+    
+    <meta name="keywords" content="Life, ARIA, Hexo">
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-chrome-192x192.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    
+    
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#33363b">
+    
+    
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    
+    
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    
+    
+    <link rel="alternate" href="/atom.xml" title="Lewis-v Blog" type="application/atom+xml" />
+    
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    
+    <link rel="stylesheet" type="text/css" href="/css/sidebar.css">
+    
+    
+<link rel="stylesheet" type="text/css" href="/css/page.css">
+<link rel="stylesheet" type="text/css" href="/css/post.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/atom-one-dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css">
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script defer type="text/javascript" src="/js/util.js"></script>
+    <script defer type="text/javascript" src="/js/scrollspy.js"></script>
+    <script defer type="text/javascript" src="/js/fontawesome-all.min.js"></script>
+    <script defer type="text/javascript" src="/js/lightgallery.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-fullscreen.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-hash.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-pager.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-thumbnail.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-zoom.min.js"></script>
+    
+    <script defer src="/js/busuanzi.pure.mini.js"></script>
+    
+    
+    <script defer type="text/javascript" src="/js/search.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+      var searchPath = "search.xml";
+      if (searchPath.length === 0) {
+        searchPath = "search.xml";
+      }
+      var path = "/" + searchPath;
+      searchFunc(path, "search-input", "search-result");
+    });
+    </script>
+    
+    
+    <script defer type="text/javascript" src="/js/index.js"></script>
+    
+    <script defer type="text/javascript" src="/js/custom.js"></script>
+    <title>java阻塞队列 | Lewis-v Blog - it's time to go</title>
+  </head>
+  <body itemscope itemtype="http://schema.org/WebPage" lang="zh_CN"  data-spy="scroll" data-target=".list-group">
+    
+<header id="header" class="header">
+  <div class="container">
+    <div class="header-container">
+      <div class="header-title">
+        <h1 class="title"><a href="/">Lewis-v Blog</a></h1>
+        <h2 class="subtitle">it's time to go</h2>
+      </div>
+      <div class="logo">
+        <img src="/images/签名.png" alt="logo">
+      </div>
+    </div>
+    
+<nav id="nav" class="nav">
+  <a id="nav-toggle" class="nav-toggle"><i class="fas fa-bars"></i></a>
+  <ul id="menu">
+    
+    <li><a href="/">首页</a></li>
+    
+    <li><a href="/archives/">归档</a></li>
+    
+    <li><a href="/categories/">分类</a></li>
+    
+    <li><a href="/about/">关于</a></li>
+    
+  </ul>
+</nav>
+
+
+  </div>
+</header>
+
+
+    <main id="main" class="main">
+      <div class="container">
+        <div class="main-container">
+          <div class="content">
+            
+<section id="post" class="post">
+  
+  <article class="post-container card " itemscope itemtype="http://schema.org/Article">
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/09/java阻塞队列/">
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+       <meta itemprop="name" content="lewis-v">
+       <meta itemprop="description" content="I am time">
+       <meta itemprop="image" content="/images/header.JPG">
+      </span>
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+       <meta itemprop="name" content="Lewis-v Blog">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">
+       <span class="">java阻塞队列</span>
+      </h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i> <time title="post-date" itemprop="dateCreated datePublished" datetime="2018-05-09T10:53:16+08:00">2018-05-09</time>
+        </span>
+        
+        
+        
+        <span class="post-meta-divider"> | </span>
+        
+        <span class="post-categories">
+          <i class="far fa-folder-open"></i>
+          
+          
+          <span itemprop="about" itemscope itemtype="http://schema.org/Thing"> <a href="/categories/JAVA/" itemprop="url" rel="index"><span itemprop="name">JAVA</span></a></span>
+          
+          
+        </span>
+        
+        
+        
+        <span class="post-meta-divider"> | </span>
+        
+        
+        <span class="post-comment-count">
+          <i class="far fa-comments"></i> <a href="/2018/05/09/java阻塞队列/#comments" itemprop="discussionUrl"><span class="post-comment-count hc-comment-count" data-xid="2018/05/09/java阻塞队列/" itemprop="commentsCount"></span></a>
+        </span>
+        
+        
+      </div>
+    </header>
+    <main class="post-body" itemprop="articleBody">
+      <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>java提供了很多阻塞队列,在平时的开发中也会使用到,所以在此对java提供的阻塞队列进行一个了解总结<br><a id="more"></a></p>
+<h1 id="首先"><a href="#首先" class="headerlink" title="首先"></a>首先</h1><p>java的阻塞队列都继承与BlockingQueue,其有共同的方法<br>boolean offer(Object o);//将数据o加入队列中,加入成功返回true,失败则为false,此方法不阻塞<br>boolean offer(Object o,long timeout,TimeUnit unit);//将o加入队列中,若timeout过后为未加入成功返回false,否则返回true,此方法会阻塞等待,unit为时间单位<br>put(Object o);//将数据o加入队列中,若队列没有空间则会阻塞当前的线程进行等待<br>Object poll();//取走队列头部的数据,如取不出则返回null<br>Object poll(long timeout,TimeUnit unit);//取走队列头部的数据,若取不出则等待timeout,等待后取不出返回null<br>Object take();//取出队列首部数据,若取不出则阻塞直到取出来<br>int drainTo(Collection c);//取出队列中所有数据放到容器c中,其中的排序为队列中的排序,返回取出的数量<br>int drainTo(Collection c,int maxLength);//取出队列的数据,最大数量为maxLength,返回实际获取得数量<br>其他队列基本都有实现以下的方法:<br>peek()与poll()功能一样<br>队列有add()方法,其内部实现与put()基本都是一样的.而且还有许多方法与列表方法一样用的,如size(),remove(),clear(),遍历时使用迭代器遍历.其中remove()为删除队头<br>队列的有界无界表明其是否指定或限定队列大小</p>
+<h1 id="ArrayBlockingQueue"><a href="#ArrayBlockingQueue" class="headerlink" title="ArrayBlockingQueue"></a>ArrayBlockingQueue</h1><p>用数组实现的有界阻塞队列,按照先进先出的原则.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">public class ArrayBlockingQueueTest &#123;</span><br><span class="line">    ArrayBlockingQueue&lt;String&gt; arrayBlockingQueue = new ArrayBlockingQueue&lt;&gt;(5,true);//定义队列大小为5,队列为先进先出顺序,false为未指定顺序</span><br><span class="line">    ExecutorService executorService = Executors.newSingleThreadExecutor();//单线程的线程池</span><br><span class="line"></span><br><span class="line">    public ArrayBlockingQueueTest() &#123;</span><br><span class="line">        for (int i = 0;i&lt;6;i++)&#123;</span><br><span class="line">            put(&quot;数据:&quot;+i);//放入数据</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void put(String data)&#123;</span><br><span class="line">        try &#123;</span><br><span class="line">            arrayBlockingQueue.put(data);//向队列中放入数据</span><br><span class="line">        &#125; catch (InterruptedException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        handle();//开启线程处理</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void handle()&#123;</span><br><span class="line">        executorService.submit(new Runnable() &#123;</span><br><span class="line">            @Override</span><br><span class="line">            public void run() &#123;</span><br><span class="line">                System.out.println(&quot;处理中...&quot;);</span><br><span class="line">                try &#123;</span><br><span class="line">                    sleep(3000);</span><br><span class="line">                &#125; catch (InterruptedException e) &#123;</span><br><span class="line">                    e.printStackTrace();</span><br><span class="line">                &#125;</span><br><span class="line">                String data = null;</span><br><span class="line">                try &#123;</span><br><span class="line">                    data = arrayBlockingQueue.poll(1, TimeUnit.SECONDS);//取出数据,1秒内取不出返回null</span><br><span class="line">                &#125; catch (InterruptedException e) &#123;</span><br><span class="line">                    e.printStackTrace();</span><br><span class="line">                &#125;</span><br><span class="line">                if ( data != null) &#123;</span><br><span class="line">                    System.out.println(data+&quot;处理结束...&quot;);</span><br><span class="line">                &#125;else &#123;</span><br><span class="line">                    System.out.println(&quot;无数据处理...&quot;);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="LinkedBlockingQueue"><a href="#LinkedBlockingQueue" class="headerlink" title="LinkedBlockingQueue"></a>LinkedBlockingQueue</h1><p>基于链表的阻塞队列,按照先进先出,其加入队列与取出队列的线程使用独立的锁来控制同步,所以其有更高的并发效率,需要注意的是在初始化时如果不指定长度会默认为无限长,这有可能会占用较多的资源,使用方法与ArrayBlockingQueue一致.</p>
+<h1 id="PriorityBlockingQueue"><a href="#PriorityBlockingQueue" class="headerlink" title="PriorityBlockingQueue"></a>PriorityBlockingQueue</h1><p>无界优先级队列,默认为升序,与Arrays.sort()方法排序类似,在初始化时可以指定其初始长度,默认为11,增长数量为当大于等于64长度时,为原长度的1.5被,当小于64的时候为原长度的2倍+2.初始化时可设置其排序的比较规则Comparator(),也可重写其compareTo方法.其无法排序同优先级</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">public class PriorityBlockingQueueTest &#123;</span><br><span class="line">    PriorityBlockingQueue&lt;String&gt; priorityBlockingQueue;</span><br><span class="line">    String[] strings;</span><br><span class="line"></span><br><span class="line">    Comparator&lt;String&gt; mComparator = new Comparator&lt;String&gt;() &#123;</span><br><span class="line">        @Override</span><br><span class="line">        public int compare(String o1, String o2) &#123;</span><br><span class="line">            return o2.length() - o1.length();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        @Override</span><br><span class="line">        public boolean equals(Object obj) &#123;</span><br><span class="line">            return false;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    public PriorityBlockingQueueTest() &#123;</span><br><span class="line">        strings = new String[]&#123;&quot;666&quot;, &quot;6626&quot;, &quot;6645457645661234566&quot;, &quot;6612423564566&quot;, &quot;6644564564564564564564566&quot;, &quot;664566&quot;, &quot;664564566&quot;, &quot;664566&quot;&#125;;</span><br><span class="line">        priorityBlockingQueue = new PriorityBlockingQueue&lt;&gt;(11,mComparator);</span><br><span class="line">        priorityBlockingQueue.put(&quot;666&quot;);</span><br><span class="line">        priorityBlockingQueue.put(&quot;6626&quot;);</span><br><span class="line">        priorityBlockingQueue.put(&quot;6645457645661234566&quot;);</span><br><span class="line">        priorityBlockingQueue.put(&quot;6612423564566&quot;);</span><br><span class="line">        priorityBlockingQueue.put(&quot;6644564564564564564564566&quot;);</span><br><span class="line">        priorityBlockingQueue.put(&quot;664566&quot;);</span><br><span class="line">        priorityBlockingQueue.put(&quot;664564566&quot;);</span><br><span class="line">        priorityBlockingQueue.put(&quot;664566&quot;);</span><br><span class="line"></span><br><span class="line">        Iterator&lt;String&gt; iterator = priorityBlockingQueue.iterator();</span><br><span class="line">        while (iterator.hasNext()) &#123;</span><br><span class="line">            System.out.println(iterator.next());</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        System.out.println(&quot;-----------------------------------------&quot;);</span><br><span class="line">        Arrays.sort(strings,mComparator);</span><br><span class="line">        for (String data : strings)&#123;</span><br><span class="line">            System.out.println(data);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>运行结果<br><img src="/images/java%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97PriorityBlockingQueue%E6%95%88%E6%9E%9C.png" alt="enter description here" title="java阻塞队列PriorityBlockingQueue效果.png"></p>
+<p>经试验验证,其内部的排序使用二分法排序,如下代码,结果与想象的不一样,具体原因还有待研究<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">private static &lt;T&gt; void siftUpUsingComparator(int k, T x, Object[] array,</span><br><span class="line">                                      Comparator&lt;? super T&gt; cmp) &#123;</span><br><span class="line">       while (k &gt; 0) &#123;</span><br><span class="line">           int parent = (k - 1) &gt;&gt;&gt; 1;//取中间值比较</span><br><span class="line">           Object e = array[parent];</span><br><span class="line">           if (cmp.compare(x, (T) e) &gt;= 0)//此处遇到返回大于等于0的就退出,退出操作有点问题</span><br><span class="line">               break;</span><br><span class="line">           array[k] = e;</span><br><span class="line">           k = parent;</span><br><span class="line">       &#125;</span><br><span class="line">       array[k] = x;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="DelayQueue"><a href="#DelayQueue" class="headerlink" title="DelayQueue"></a>DelayQueue</h1><p>延时取出的无界队列,基于PriorityQueue实现的,加入的元素需要实现Delayed接口,目前并不会使用</p>
+<h1 id="SynchronousQueue"><a href="#SynchronousQueue" class="headerlink" title="SynchronousQueue"></a>SynchronousQueue</h1><p>不存储元素的队列,当插入的一个元素,必须等待其他线程移除才可继续运行,当移除一个元素,如使用remove且无插入在等待会报错,使用take()会等到有元素插入了才返回,否则阻塞,其他的有就有没有就返回null.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">public class SynchronoutsQueueTest &#123;</span><br><span class="line">    SynchronousQueue&lt;String&gt; stringSynchronousQueue = new SynchronousQueue&lt;&gt;();</span><br><span class="line">    public SynchronoutsQueueTest() &#123;</span><br><span class="line">        new MyThread().start();</span><br><span class="line">        try &#123;</span><br><span class="line">            stringSynchronousQueue.put(&quot;666&quot;);</span><br><span class="line">        &#125; catch (InterruptedException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(&quot;----------putEndMain----------&quot;);</span><br><span class="line">        try &#123;</span><br><span class="line">            System.out.println(&quot;----------poll:&quot;+stringSynchronousQueue.take()+&quot;Main----------&quot;);</span><br><span class="line">        &#125; catch (InterruptedException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    class MyThread extends Thread&#123;</span><br><span class="line">        @Override</span><br><span class="line">        public void run() &#123;</span><br><span class="line">            try &#123;</span><br><span class="line">                sleep(3000);</span><br><span class="line">            &#125; catch (InterruptedException e) &#123;</span><br><span class="line">                e.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line">            System.out.println(&quot;----------poll:&quot;+stringSynchronousQueue.poll()+&quot;Thread----------&quot;);</span><br><span class="line">            try &#123;</span><br><span class="line">                sleep(3000);</span><br><span class="line">            &#125; catch (InterruptedException e) &#123;</span><br><span class="line">                e.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line">            try &#123;</span><br><span class="line">                stringSynchronousQueue.put(&quot;666&quot;);</span><br><span class="line">            &#125; catch (InterruptedException e) &#123;</span><br><span class="line">                e.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line">            System.out.println(&quot;----------putEndThread----------&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>运行结果<br><img src="/images/java%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97SynchronousQueue.png" alt="enter description here" title="java阻塞队列SynchronousQueue.png"></p>
+<h1 id="LinkedTransferQueue"><a href="#LinkedTransferQueue" class="headerlink" title="LinkedTransferQueue"></a>LinkedTransferQueue</h1><p>无界的链表队列,用于生产者等待消费者的需求,其实现了TransferQueue接口,其中有几个重要方法<br>transfer(Object o);//加入队列,如加入时没有取出队列操作,会阻塞等待取出.<br>boolean tryTransfer(Object o);//加入队列,如有取出的操作在等待则加入并返回true,否则不加入并返回false<br>boolean tryTransfer(Object o,long timeout,TimeUnit unit);//有超时机制的tryTransfer</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">public class LinkedTransferQueueTest &#123;</span><br><span class="line">    LinkedTransferQueue&lt;String&gt; linkedTransferQueue = new LinkedTransferQueue&lt;&gt;();</span><br><span class="line">    public LinkedTransferQueueTest() &#123;</span><br><span class="line">        new TestThread().start();</span><br><span class="line">        while (true) &#123;</span><br><span class="line">            try &#123;</span><br><span class="line">                Thread.sleep(3000);</span><br><span class="line">                System.out.println(&quot;消费:&quot; + linkedTransferQueue.take());</span><br><span class="line">            &#125; catch (InterruptedException e) &#123;</span><br><span class="line">                e.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    class TestThread extends Thread&#123;</span><br><span class="line">        @Override</span><br><span class="line">        public void run() &#123;</span><br><span class="line">            while (true) &#123;</span><br><span class="line">                try &#123;</span><br><span class="line">                    System.out.println(&quot;出产...&quot;);</span><br><span class="line">                    linkedTransferQueue.transfer(&quot;34636&quot;);</span><br><span class="line">                &#125; catch (InterruptedException e) &#123;</span><br><span class="line">                    e.printStackTrace();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>运行结果<br><img src="/images/java%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97LinkedTransferQueue.png" alt="enter description here" title="java阻塞队列LinkedTransferQueue.png"></p>
+<p>在每次出产后都会等待消费后再进行下一次的出产</p>
+<h1 id="LinedBlockingDeque"><a href="#LinedBlockingDeque" class="headerlink" title="LinedBlockingDeque"></a>LinedBlockingDeque</h1><p>双向阻塞队列,在初始化时可设置其最大容量,默认为int的最大值,队列提供了addFirst、addLast、offerFirst、offerLast、peekFirst、peekLast等方法进行对队头和队尾的操作。</p>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>java提供的阻塞队列使用起来也是挺便利的,虽然有些可能写错了,希望大家指出纠正.</p>
+
+    </main>
+    <footer class="post-footer">
+      
+      
+    </footer>
+  </article>
+  
+  
+<div class="reward" id="reward">
+  <p>坚持原创技术分享，您的鼓励将是我继续前进的动力！</p>
+  <button id="reward-button" class="button" disable="enable">打赏</button>
+  <div id="qr" class="qr" style="display: none;">
+    
+    <div id="wechat">
+      <img id="wechat_qr" src="/images/WeChatPay.png" alt="微信支付"/>
+      <span>微信支付</span>
+    </div>
+    
+    
+    <div id="alipay">
+      <img id="alipay_qr" src="/images/AliPay.jpg" alt="支付宝"/>
+      <span>支付宝</span>
+    </div>
+    
+    
+  </div>
+</div>
+
+
+  
+  
+  <div class="post-nav">
+    
+    <div class="post-nav-next post-nav-item">
+      <a href="/2018/05/09/Android好多好多的Drawable/" rel="next" title="Android好多好多的Drawable">
+        <i class="fas fa-angle-left"></i>
+        <span class="nav-title">Android好多好多的Drawable</span>
+      </a>
+    </div>
+    
+    
+  </div>
+  
+  
+  
+
+<div class="comments" id="comments">
+  
+  
+  <div id="hypercomments_widget"></div>
+  
+  <script type="text/javascript">
+  _hcwp = window._hcwp || [];
+  _hcwp.push({ widget: "Bloggerstream", widget_id: 1, selector: ".hc-comment-count", label: "{\%COUNT%\}" });
+  
+  _hcwp.push({ widget:"Stream", widget_id: 1, xid: "2018/05/09/java阻塞队列/" });
+  
+  (function() {
+    if ("HC_LOAD_INIT" in window)
+      return;
+    HC_LOAD_INIT = true;
+    var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+    var hcc = document.createElement("script");
+    hcc.type = "text/javascript";
+    hcc.async = true;
+    hcc.src = ("https:" === document.location.protocol ? "https" : "http") + "://w.hypercomments.com/widget/hc/1/"+lang+"/widget.js";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hcc, s.nextSibling);
+  })();
+  </script>
+  
+</div>
+
+
+
+  
+</section>
+
+          </div>
+          
+          
+          
+<aside class="sidebar" id="sidebar">
+  
+  <div class="search">
+    <div class="form-group">
+      <i class="fas fa-search"></i> <input type="text" id="search-input" name="q" results="0" placeholder="搜索" class="form-control"/>
+    </div>
+  </div>
+  <div class="search-result-box" id="search-result"></div>
+  
+  
+<div class="info sidebar-item" id="info">
+  
+  <img class="author-avatar" src="/images/header.JPG" alt="lewis-v">
+  
+  <p class="author-name">lewis-v</p>
+  <p class="author-description"> I am time</p>
+  <div class="site-count">
+    
+    <div class="archives-count">
+      <p>归档</p>
+      <p><a href="/archives/">8</a></p>
+    </div>
+    
+    
+    
+    <span class="site-count-divider"> | </span>
+    
+    <div class="categories-count">
+      <p>分类</p>
+      <p><a href="/categories/">2</a></p>
+    </div>
+    
+    
+  </div>
+  
+  <div class="rss">
+    <a class="rss-link button sidebar-item" href="/atom.xml"><i class="fas fa-rss"></i> RSS</a>
+  </div>
+  
+</div>
+
+
+  <div class="sidebar-sticky">
+    
+    
+
+
+
+
+<hr>
+<div class="post-toc sidebar-item" id="toc-div">
+  <p><i class="fas fa-list-ol"></i> 文章目录</p>
+  <div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#首先"><span class="toc-text">首先</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ArrayBlockingQueue"><span class="toc-text">ArrayBlockingQueue</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#LinkedBlockingQueue"><span class="toc-text">LinkedBlockingQueue</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PriorityBlockingQueue"><span class="toc-text">PriorityBlockingQueue</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#DelayQueue"><span class="toc-text">DelayQueue</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#SynchronousQueue"><span class="toc-text">SynchronousQueue</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#LinkedTransferQueue"><span class="toc-text">LinkedTransferQueue</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#LinedBlockingDeque"><span class="toc-text">LinedBlockingDeque</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#小结"><span class="toc-text">小结</span></a></li></ol></div>
+</div>
+
+
+
+    
+    
+    
+<hr>
+<div class="social-link sidebar-item">
+  <p><i class="far fa-address-card"></i> 社交链接</p>
+  <ul>
+    
+    <li><i class="fab fa-github"></i> <a href="https://github.com/" target="_blank">GitHub</a></li>
+    
+    <li><i class="fas fa-copyright"></i> <a href="https://blog.csdn.net/qq_38713396" target="_blank">CSDN</a></li>
+    
+  </ul>
+</div>
+
+
+    
+    
+    
+<hr>
+<div class="blogroll sidebar-item">
+  <p><i class="fas fa-link"></i> 友情链接</p>
+  <ul>
+    
+    <li><a href="https://developer.mozilla.org/" target="_blank">MDN</a></li>
+    
+    <li><a href="https://mozilla.github.io/nunjucks/" target="_blank">Nunjucks</a></li>
+    
+    <li><a href="http://stylus-lang.com/" target="_blank">Stylus</a></li>
+    
+  </ul>
+</div>
+
+
+    
+  </div>
+</aside>
+
+
+          
+        </div>
+      </div>
+    </main>
+    
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="back-to-top">
+      <a id="back-to-top"><i class="fas fa-angle-double-up"></i></a>
+    </div>
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="copyright">
+          <span class="author">lewis-v</span>
+          <span class="year"><i class="far fa-copyright"></i> 2018</span>
+          
+        </div>
+        
+        
+<div class="busuanzi">
+  <span id="busuanzi_container_site_pv"><i class="fas fa-eye"></i> <span id="busuanzi_value_site_pv"></span></span>
+  <span id="busuanzi_container_site_uv"><i class="fas fa-user"></i> <span id="busuanzi_value_site_uv"></span></span>
+  <span id="busuanzi_container_page_pv"><i class="far fa-file-alt"></i> <span id="busuanzi_value_page_pv"></span></span>
+</div>
+
+
+        
+      </div>
+      <div class="footer-right">
+        <div class="custom-info">
+          
+          托管于 <i class="fab fa-github-alt"></i> <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
+          
+        </div>
+        <div class="powered-by">
+          由 <a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank">ARIA</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  </body>
+</html>

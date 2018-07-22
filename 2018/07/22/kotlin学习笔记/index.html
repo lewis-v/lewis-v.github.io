@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#33363b">
+    <meta name="msapplication-TileColor" content="#33363b">
+    
+    
+    
+    <meta name="keywords" content="Life, ARIA, Hexo">
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-chrome-192x192.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    
+    
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#33363b">
+    
+    
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    
+    
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    
+    
+    <link rel="alternate" href="/atom.xml" title="Lewis-v Blog" type="application/atom+xml" />
+    
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    
+    <link rel="stylesheet" type="text/css" href="/css/sidebar.css">
+    
+    
+<link rel="stylesheet" type="text/css" href="/css/page.css">
+<link rel="stylesheet" type="text/css" href="/css/post.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/atom-one-dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css">
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script defer type="text/javascript" src="/js/util.js"></script>
+    <script defer type="text/javascript" src="/js/scrollspy.js"></script>
+    <script defer type="text/javascript" src="/js/fontawesome-all.min.js"></script>
+    <script defer type="text/javascript" src="/js/lightgallery.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-fullscreen.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-hash.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-pager.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-thumbnail.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-zoom.min.js"></script>
+    
+    <script defer src="/js/busuanzi.pure.mini.js"></script>
+    
+    
+    <script defer type="text/javascript" src="/js/search.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+      var searchPath = "search.xml";
+      if (searchPath.length === 0) {
+        searchPath = "search.xml";
+      }
+      var path = "/" + searchPath;
+      searchFunc(path, "search-input", "search-result");
+    });
+    </script>
+    
+    
+    <script defer type="text/javascript" src="/js/index.js"></script>
+    
+    <script defer type="text/javascript" src="/js/custom.js"></script>
+    <title>kotlin学习笔记 | Lewis-v Blog - it's time to go</title>
+  </head>
+  <body itemscope itemtype="http://schema.org/WebPage" lang="zh_CN"  data-spy="scroll" data-target=".list-group">
+    
+<header id="header" class="header">
+  <div class="container">
+    <div class="header-container">
+      <div class="header-title">
+        <h1 class="title"><a href="/">Lewis-v Blog</a></h1>
+        <h2 class="subtitle">it's time to go</h2>
+      </div>
+      <div class="logo">
+        <img src="/images/签名.png" alt="logo">
+      </div>
+    </div>
+    
+<nav id="nav" class="nav">
+  <a id="nav-toggle" class="nav-toggle"><i class="fas fa-bars"></i></a>
+  <ul id="menu">
+    
+    <li><a href="/">首页</a></li>
+    
+    <li><a href="/archives/">归档</a></li>
+    
+    <li><a href="/categories/">分类</a></li>
+    
+    <li><a href="/about/">关于</a></li>
+    
+  </ul>
+</nav>
+
+
+  </div>
+</header>
+
+
+    <main id="main" class="main">
+      <div class="container">
+        <div class="main-container">
+          <div class="content">
+            
+<section id="post" class="post">
+  
+  <article class="post-container card " itemscope itemtype="http://schema.org/Article">
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/22/kotlin学习笔记/">
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+       <meta itemprop="name" content="lewis-v">
+       <meta itemprop="description" content="I am time">
+       <meta itemprop="image" content="/images/header.JPG">
+      </span>
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+       <meta itemprop="name" content="Lewis-v Blog">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">
+       <span class="">kotlin学习笔记</span>
+      </h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i> <time title="post-date" itemprop="dateCreated datePublished" datetime="2018-07-22T11:29:36+08:00">2018-07-22</time>
+        </span>
+        
+        
+        
+        <span class="post-meta-divider"> | </span>
+        
+        <span class="post-categories">
+          <i class="far fa-folder-open"></i>
+          
+          
+          <span itemprop="about" itemscope itemtype="http://schema.org/Thing"> <a href="/categories/Kotlin/" itemprop="url" rel="index"><span itemprop="name">Kotlin</span></a></span>
+          
+          
+        </span>
+        
+        
+        
+        <span class="post-meta-divider"> | </span>
+        
+        
+        <span class="post-comment-count">
+          <i class="far fa-comments"></i> <a href="/2018/07/22/kotlin学习笔记/#comments" itemprop="discussionUrl"><span class="post-comment-count hc-comment-count" data-xid="2018/07/22/kotlin学习笔记/" itemprop="commentsCount"></span></a>
+        </span>
+        
+        
+      </div>
+    </header>
+    <main class="post-body" itemprop="articleBody">
+      <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>以前android的开发大部分使用java开发,而由于kotlin的推出,公司也开始转向了使用kotlin,所以在这里记录下学习kotlin的笔记.<br>  <a id="more"></a></p>
+<h1 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h1><h2 id="基本类型"><a href="#基本类型" class="headerlink" title="基本类型"></a>基本类型</h2><p>在kotlin中没有基本类型,其中一切都是对象,这也导致了其没有自动转换类型的功能,如folat不会自动上转为double之类的,而在java的基础类型之间转换需要调用其中的方法,虽然在本文中,多出地方使用了关键字,但其也是一个对象,只是作者沿用了java的说法.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">val i :Int = 7</span><br><span class="line">val d :Double = i.toDouble()//Int对象中的转换方法</span><br><span class="line">val s = &quot;eeeee&quot;//String类型的s</span><br><span class="line">val c = s[0]//kotlin的字符串类型也可以像数组那样字节访问,且可以当做数组来迭代</span><br></pre></td></tr></table></figure></p>
+<h2 id="定义包和导入包"><a href="#定义包和导入包" class="headerlink" title="定义包和导入包"></a>定义包和导入包</h2><p>这个与java的使用时一样的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">package com.lewis.test</span><br><span class="line"></span><br><span class="line">import com.lewis.test.util</span><br></pre></td></tr></table></figure></p>
+<h2 id="定义函数"><a href="#定义函数" class="headerlink" title="定义函数"></a>定义函数</h2><p>kotlin中的函数使用fun作为关键字来定义,返回值在函数参数声明后使用”:”冒号来定义返回值类型,当然也可以让其自动判断返回类型,返回参数也使用return返回<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">fun sum(a :Int,b:Int) : Int&#123;</span><br><span class="line">return a+b</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">fun sum(a:Int,b:Int) = a + b//自动推断返回的(a+b)的类型</span><br><span class="line"></span><br><span class="line">fun sum(a:Int,b:Int) = &#123; a + b&#125;//这里返回的是a+b的类型,如Int</span><br></pre></td></tr></table></figure>
+<p>kt中无返回值(返回无意义的值),也就是java中的void,其使用关键字Unit,当然这个关键字一般是可以省略的,如下两个函数,其返回值是Unit(无返回值)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> fun test()&#123;</span><br><span class="line">println(&quot;555&quot;)</span><br><span class="line">&#125;</span><br><span class="line">fun test() :Unit&#123;</span><br><span class="line">println(&quot;555&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>kotlin的函数可以使用参数默认值,这是java所不支持的,其使用与C++的默认参数类似,但也有点不同<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">fun defultTest(name :String ,age:Int,sex : String = &quot;Man&quot;)&#123;//此处的第三个参数有默认值Man</span><br><span class="line">    print(name+sex+age)</span><br><span class="line">&#125;</span><br><span class="line">defultTest(&quot;lewis&quot;,23)//第三个参数可以省略,其默认为Man,相当于defultTest(&quot;lewis&quot;,23,&quot;Man&quot;)</span><br><span class="line">defultTest(&quot;lewis&quot;,23,&quot;women&quot;)//这里就不使用默认参数,使用women值</span><br></pre></td></tr></table></figure></p>
+<p>这里有个小扩展,在C++中的默认参数一定要放在函数参数列表的后面,否则会报错,但kotlin这样用却不会报错,个人认为将默认参数放在中间这是一个意义不大的事情<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">fun defultTest(name :String ,sex : String = &quot;Man&quot;,age:Int)&#123;&#125;</span><br><span class="line">//像这种情况,在调用时因为第三个参数没有默认值,所以一定要传第三个值,所以这里也导致了第二个值一定要传,所以这里,个人认为在实际开发中尽量避免这样的设计</span><br></pre></td></tr></table></figure></p>
+<h2 id="可变长度的参数"><a href="#可变长度的参数" class="headerlink" title="可变长度的参数"></a>可变长度的参数</h2><p>在java中可以使用…来表示函数传入的参数长度不固定,而kotlin中也有这功能,但不是…,而是vararg关键字<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">fun argTest(vararg data:String)&#123;</span><br><span class="line">println(data.size)</span><br><span class="line">    println(data.toList())//转换为list,并调用toString()输出,直接输出data是一个数组对象</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="局部函数"><a href="#局部函数" class="headerlink" title="局部函数"></a>局部函数</h2><p>kotlin中有局部函数,从名字看,就是函数中的函数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">fun save(str:String)&#123;</span><br><span class="line">fun isEmpty(str:String)&#123;//定义一个内部函数</span><br><span class="line">if (str == null)&#123; throw NullpointException(&quot;null&quot;)&#125;</span><br><span class="line">&#125;</span><br><span class="line">isEmpty(str)//在函数内部直接调用,在外部不可调用</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="局部参数定义"><a href="#局部参数定义" class="headerlink" title="局部参数定义"></a>局部参数定义</h2><p>val定义的只能赋值一次,类似于java的final;var定义可变类型,类似java定义的普通变量;两种定义的使用方式基本类型,其不同之处只是在定以后val的参数不可以再次赋值,而var可以<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">fun main(args : Array&lt;String&gt;)&#123;</span><br><span class="line">val a:Int = 1</span><br><span class="line">val b = 2//自动识别b为int类型</span><br><span class="line">val c: Int//定义c,其类型为int,此时的类型不可以省略</span><br><span class="line">c = 3</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">fun main(args:Array&lt;String&gt;)&#123;</span><br><span class="line">var d = 5//自动识别d为int</span><br><span class="line">d += 1//运算符和java一样用</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其中可以使用as关键字类转换类型,父子类的转换或强制转换<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var a:Int = 3 as Any as Int//这里是将3转换成Any类型,在转换为Int类型(这里只是作为一个例子,没有任何实际意义)</span><br></pre></td></tr></table></figure></p>
+<h2 id="字符串模板"><a href="#字符串模板" class="headerlink" title="字符串模板"></a>字符串模板</h2><p>kt可使用”$”,在字符串中引用参数或将”${xxx}”xxx的结果转换为字符串</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">fun stringTest()&#123;</span><br><span class="line">    var a = 5</span><br><span class="line">    val str = &quot;a is $a&quot;//此时str的字符串赋值为&quot;a is 5&quot;</span><br><span class="line">    a = 1</span><br><span class="line">    println(str.replace(&quot;is&quot;,&quot;was&quot;)+&quot;,but now is $a&quot;)</span><br><span class="line">    println(&quot;$&#123;str.replace(&quot;is&quot;,&quot;was&quot;)&#125;,but now is $a&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="if条件判断"><a href="#if条件判断" class="headerlink" title="if条件判断"></a>if条件判断</h2><p>kt中的if与java的用法类似,可以说java怎么用,kt就可以怎么用,但kt有更多的用法,如kt的if是可以用返回值的,在if的代码块的最后一句,如果为一个值,那么他就是if的返回值,这里需要注意的是,如果需要其有返回值,那每一个if条件的代码块的最后一行都需要是有一个同类型的值,否则无返回值<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">fun ifTest(): Int &#123;</span><br><span class="line">    var result =  if (3 == 4) 3 else 4</span><br><span class="line">    return result</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">fun ifTest2():Int&#123;</span><br><span class="line">return if(3==4)println(3)else 4//这样子if是没有返回值的,且编译器会报错</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="null可空值"><a href="#null可空值" class="headerlink" title="null可空值"></a>null可空值</h2><p>在kt中,要是某个值可为null时,需要再声明的类型后面添加?,来表示该应用可以为空;<br>且在这个参数使用时加上?使用,可在其不为空时才调用,在为空时不调用;<br>使用!!来保证不为空时才调用,为空时抛出异常;<br>使用?:来给其在空时的默认值<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var a : Int? = null</span><br><span class="line">var a: Int = null//此处会报错</span><br><span class="line">fun getInt():Int?&#123;//这里的返回可以为null</span><br><span class="line">...</span><br><span class="line">var a:String? = null</span><br><span class="line">a?.length()//这里只有在a不为空时才会调用</span><br><span class="line">a!!.length()//这里a为空时会直接抛出异常</span><br><span class="line">a?.length() ?:0//这里在a为空的时候,使用默认值0</span><br><span class="line">a.length()//这里是不能通过编译的,因为a在这里有可能为空</span><br><span class="line">a as? String//这里是a不为空时将a转换为String类型,否者返回null</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="类型检测及自动类型转换"><a href="#类型检测及自动类型转换" class="headerlink" title="类型检测及自动类型转换"></a>类型检测及自动类型转换</h2><p>kt中使用is关键字来检测类型,且检测后的分支中可以直接当该类型使用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">fun getStringLength(obj:Any):Int?&#123;//Any为任何类型,类似于java的object</span><br><span class="line">if (obj is String)&#123;</span><br><span class="line">return obj.length//此分支中,obj的类型为String</span><br><span class="line">&#125;</span><br><span class="line">//出了分支obj还是String</span><br><span class="line">return null</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h2><p>kt中使用in关键字来循环遍历<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">fun forTest(args:Array&lt;String&gt;)&#123;</span><br><span class="line">for(item in args)&#123;//遍历其数组中的元素</span><br><span class="line">println(item)//此处不可做删除操作,否则会抛异常</span><br><span class="line">&#125;</span><br><span class="line">for(index in args.indices)&#123;//遍历其数组中的下标</span><br><span class="line">println(args[index])//此处也不可做删除操作,删除了数组的大小会变小,在最后就会出现数组越界,所以如果删除了元素就要做相应的保护措施</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="区间"><a href="#区间" class="headerlink" title="区间"></a>区间</h2><p>kotlin中有使用..来表示区间<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">if(x in 1..3)&#123;//x是否在1到3之间,包括1和3,如果为!in为如果不在1到3的区间</span><br><span class="line">...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>迭代区间<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">for(x in 1..5)&#123;//包括1和5</span><br><span class="line">println(x)//1 2 3 4 5</span><br><span class="line">&#125;</span><br><span class="line">for(x in 1..5 step 2)&#123;//包括1和5,step 2表示迭代时每次迭代的步长为2</span><br><span class="line">println(x)//1 3 5</span><br><span class="line">&#125;</span><br><span class="line">for(x in 1 util 5)&#123;//1到5,此处不包括5,一般用于遍历列表</span><br><span class="line">println(x)//1 2 3 4</span><br><span class="line">&#125;</span><br><span class="line">for(x in 100 downTo 1 step 3)&#123;//downTo是递减,这里是从100递减到1,步长为3,就是每次-3,包括1和100</span><br><span class="line">println(x)//100 97 94 91...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h2><p>这个与java 的一样使用</p>
+<h2 id="when表达式"><a href="#when表达式" class="headerlink" title="when表达式"></a>when表达式</h2><p>类似于java 的swich,且when和if一样是有返回值的,返回值用法也和if的一样<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">fun whenTest(obj : Any) :String =</span><br><span class="line">when(obj)&#123;</span><br><span class="line">1 -&gt;&quot;111&quot;</span><br><span class="line">2,3-&gt;&quot;2,3&quot;//多个情况可使用逗号隔开</span><br><span class="line">4..7-&gt;&quot;4-7&quot;//使用区间也可以</span><br><span class="line">&quot;asd&quot; -&gt;&quot;aaaa&quot;</span><br><span class="line">is Long -&gt; &quot;long&quot;</span><br><span class="line">!is String -&gt; &quot;Not string&quot;</span><br><span class="line">else -&gt; &quot;unKnown&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>当然when中可以不传参数,再不传的情况下,其分支条件需要为布尔值<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">when&#123;</span><br><span class="line">true-&gt;&quot;true&quot;</span><br><span class="line">a ==0 || b == 0-&gt;&quot;false&quot;</span><br><span class="line">else &quot;null&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h2><p>kotlin的异常与java 的类似,也是使用try-catch-finally,但其和if一样是一个表达式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var result = try&#123;//这里无异常时会返回22,有异常时返回null,且一定会打印change</span><br><span class="line">Integer.parseInt(&quot;22&quot;)</span><br><span class="line">&#125; catch(e : NumberFormatException)&#123;</span><br><span class="line">null</span><br><span class="line">&#125;finally&#123;</span><br><span class="line">println(&quot;change&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="相等比较"><a href="#相等比较" class="headerlink" title="==相等比较"></a>==相等比较</h2><p>在kotlin中==是使用equals()比较的,是数值相等,而在java中,若对对象使用==,则是比较引用相等<br>在kotlin中,如果需要比较其引用相等,需要使用===,三等号</p>
+<h2 id="类"><a href="#类" class="headerlink" title="类"></a>类</h2><h3 id="定义类"><a href="#定义类" class="headerlink" title="定义类"></a>定义类</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">class MainActivity&#123;</span><br><span class="line">&#125;</span><br><span class="line">class MainActivity2(name:String,surname:String)//此处的类内无任何操作,所以可以忽略大括号,且(name:String,surnameString)这个就是声明其的构造函数</span><br><span class="line">class MainActivity3(var name:String,var surname:String)//这个和上一个很像,但上一个的类中并没有声明有属性,但这个声明了name和surname两个参数</span><br><span class="line">class MainActivity4(var name:String,var surname:String)&#123;</span><br><span class="line">init&#123;</span><br><span class="line">...//这个方法块是在主构造函数的函数体</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><p>构造函数中声明了属性或类中声明的属性,会默认的有setter和getter方法,虽在在使用的时候像是直接在操作属性其实其是调用了对应的get和set方法,当然也可以修改默认的set和get方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">class Test()&#123;</span><br><span class="line">var change0 = 0</span><br><span class="line">var change1 = 1</span><br><span class="line"> get() &#123;</span><br><span class="line">            		return field+1//field是保留值,指向获取的这个参数,这里就是指向change1</span><br><span class="line">       	 	&#125;</span><br><span class="line">        	set(value) &#123;this.change = 2&#125;</span><br><span class="line">//这里修改了change1的get和set的默认方法,对change0和change2没有影响</span><br><span class="line">var change = 2</span><br><span class="line">var change3 = 4</span><br><span class="line">private set//可以将访问其的权限设置为本类使用或其他的</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">class Test1(var name:String)&#123;//此处括号声名的就是此类的主构造函数,当存在主构造函数时,就不能有从构造函数</span><br><span class="line">&#125;</span><br><span class="line">class Test2&#123;//无主构造函数</span><br><span class="line">constructor(name:String)&#123;//从构造函数</span><br><span class="line">this(name,0)//和java一样,可以使用this来调用其他构造函数</span><br><span class="line">&#125;</span><br><span class="line">constructor(name:String,age:Int)&#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>一般来说,要使用主构造函数来实现,然后其他参数提供相应的默认值,来达到类似重载的功能</p>
+<h3 id="类继承"><a href="#类继承" class="headerlink" title="类继承"></a>类继承</h3><p>kotlin中的类只能继承显示声明为open或abstract的类,其中open是可被重写的意思,abstract是抽象的意思<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">open class Test1(name: String)</span><br><span class="line">abstract class Test2(surname: String)</span><br></pre></td></tr></table></figure></p>
+<p>向上面两个类的声明才可以被继承,继承时使用”:”来继承,而不是java中的extends关键字<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">class Test3(name: String) : Test1(name)&#123;//这里在构建是会默认调用父类Test1(name:String)的构造方法</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>kotlin的方法默认是final,不可重写的,所以,如果需要可以重写就需要显示声名open,或设为abstract抽象方法,而继承后重写一定要使用override关键字,且override关键字默认为open,所以在重写后,若想此方法不可被重写就要显示的使用final,kotlin的final与java的类似<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">abstract class abTest&#123;</span><br><span class="line">abstract fun one()//子类必须重写</span><br><span class="line">open fun two()&#123;&#125;//子类可以重写,也可以不重写</span><br><span class="line">fun three()&#123;&#125;//子类不可重写</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h3><p>接口的实现与继承一样,都是使用”:”,接口内的方法默认都为open,且无实现体就默认为abstract<br>kotlin的接口定义也是使用interface关键字,且支持在接口中提供默认实现<br>无默认方法的,其子类一定要实现这个方法,如有默认实现的,子类可以不是实现,默认使用接口中的是实现<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">interface Clickable&#123;</span><br><span class="line">fun click()</span><br><span class="line">fun showOff() = println(&quot;default&quot;)//此方法有默认的实现</span><br><span class="line">&#125;</span><br><span class="line">interface Clickable2&#123;</span><br><span class="line">fun showOff() = println(&quot;default2&quot;)//此方法有默认的实现</span><br><span class="line">&#125;</span><br><span class="line">class Button : Clickable,Clickable2&#123;</span><br><span class="line">override fun click() = println(&quot;click&quot;)//override 是重写父类的编辑,在java中是一个注释且可有可无,但在kotlin中,如果是重写就一定要有override </span><br><span class="line">override fun showOff() &#123;//当实现的两个接口都有同一个方法,那子类一定要重写他,否则会报错</span><br><span class="line">super&lt;Clickable&gt;.showOff()//调用指定父类的实现</span><br><span class="line">super&lt;Clickable2&gt;.showOff()</span><br><span class="line"> println(&quot;Button&quot;)</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这里可以看出继承和实现的不同,继承需要加上其构造方法,而实现不用<br>除了方法之外,kotlin的接口还支持默认属性,且kotlin的接口不存储属性值,只有其子类才会存储<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">interface ITest&#123;</span><br><span class="line">val name :String//此处的name不可以赋值,且子类实现后必须重写此属性</span><br><span class="line">val age:Int//此处提供了get,其子类可以不重写age</span><br><span class="line">get() = 1</span><br><span class="line">&#125;</span><br><span class="line">class Test4(override val name :String) :ITest</span><br></pre></td></tr></table></figure></p>
+<h3 id="可见性修饰符"><a href="#可见性修饰符" class="headerlink" title="可见性修饰符"></a>可见性修饰符</h3><p>在kotlin中有public/internal/protected/private,四种,默认为public,而java中默认为包私有,这和kotlin的不太一样,且kotlin没有包私有修饰符.protected与java的不同,只能是在本类和子类中可见,而kotlin转java是,internal会被转为public</p>
+<p>修饰符    ||    类成员    ||    顶层声名<br>public(默认)    ||    所有地方可见    ||    所有地方可见<br>internal    ||    模块中可见    ||    模块中可见<br>protected     ||    子类可见    ||     无此用法<br>private    ||    类中可见    ||    文件中可见</p>
+<h3 id="data数据类"><a href="#data数据类" class="headerlink" title="data数据类"></a>data数据类</h3><p>kotlin中提供了一个数据类,数据类中提供了equals/hashcode/toString方法的重写,还提供了copy方法来复制数据类,声名的关键字为data<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data class TestData(val name:String,var age:Int)</span><br></pre></td></tr></table></figure></p>
+<h3 id="enum枚举类"><a href="#enum枚举类" class="headerlink" title="enum枚举类"></a>enum枚举类</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">enum class EnumTest(val a:Int,val b:String )&#123;</span><br><span class="line">    ONE(1,&quot;1&quot;),TWO(2,&quot;2&quot;);//此处定义枚举类的值,若要定义方法,则要使用&quot;;&quot;隔开,这里是kotlin中唯一要使用&quot;;&quot;的地方</span><br><span class="line">    fun printAll() = println(&quot;$a,$b&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="扩展函数"><a href="#扩展函数" class="headerlink" title="扩展函数"></a>扩展函数</h3><p>这个就厉害了,可以类以外的一个地方对类方法进行扩展,也可以说是给类添加一个函数,然后在其他地方使用到这个类时,可以直接调用这个方法使用,如对Context添加一个Toast的方法<br>需要注意的是,扩展函数无法使用被扩展类的protected和private修饰的属性或方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//Test.kt</span><br><span class="line">fun Context.toast(message :CharSequence)&#123;</span><br><span class="line">    Toast.makeText(this,message,Toast.LENGTH_SHORT).show()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>//MainACtivity.kt<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">class MainActivity : AppCompatActivity() &#123;</span><br><span class="line"></span><br><span class="line">    override fun onCreate(savedInstanceState: Bundle?) &#123;</span><br><span class="line">        super.onCreate(savedInstanceState)</span><br><span class="line">        setContentView(R.layout.activity_main)</span><br><span class="line">        toast(&quot;nfh&quot;)//因为Activity是继承了Context,所以可以直接调用Context中扩展的函数toast</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>当然除了可以添加函数,也可以添加属性<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public var Context.age: Int//对Context添加属性age,这样所有Context的子类及本身都有这个属性了</span><br><span class="line">    get() = age</span><br><span class="line">    set(value) &#123; age = value&#125;</span><br></pre></td></tr></table></figure></p>
+<p>需要注意的是,扩展函数不能被子类重写,因为扩展函数会被当做静态类型来处理,而且当扩展函数名和成员函数名一样是会优先使用成员函数名</p>
+<h3 id="内部类-嵌套类"><a href="#内部类-嵌套类" class="headerlink" title="内部类(嵌套类)"></a>内部类(嵌套类)</h3><p>在java中的内部类,如不声名为静态的,其会持有外部类的引用,而声名了静态类型则不持有<br>而在kotlin中默认是不持有的(相当于静态),如果需要持有外部类引用则需要使用inner关键字<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">class Outer&#123;</span><br><span class="line">inner class Inner&#123;</span><br><span class="line">fun getOut() : Outer = this@Outer//要使用外部类时,要使用this@去引用</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="密封类"><a href="#密封类" class="headerlink" title="密封类"></a>密封类</h3><p>关键字sealed,使用sealed声名的类,默认为open,其子类只能在本类中继承在类外不可继承(在kotlin1.1版本改为在文件中)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sealed class Expr&#123;</span><br><span class="line">calss Num():Expr()</span><br><span class="line">class Sum():Expr()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="kotlin基础之后的"><a href="#kotlin基础之后的" class="headerlink" title="kotlin基础之后的"></a>kotlin基础之后的</h1><h2 id="协程"><a href="#协程" class="headerlink" title="协程"></a>协程</h2><p>协程有个特点就是轻量级:<br>协程与线程类似,但是他比线程更加的轻量级,如开启1000个线程和1000个协程去执行一个工作,其中的开启线程就是开了1000个线程,这里是非常消耗资源的,而1000个协程,其中只是开了几个或几十个线程去工作.</p>
+<h3 id="协程的使用"><a href="#协程的使用" class="headerlink" title="协程的使用"></a>协程的使用</h3><p>使用协程需要导入一些包<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">implementation &quot;org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinCoroutinesVersion&quot;//版本用了0.20版本再高点低点问题不大</span><br><span class="line">implementation &quot;org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlinCoroutinesVersion&quot;//这个是android使用的包,这里会多一个使用handle调度协程所工作的线程的方法</span><br></pre></td></tr></table></figure></p>
+<p>kotlin的协程可使用async或launch来开启,两者功能类似,只是async默认是异步的,即不会立即运行,且两者的返回值不同,launch返回一个Job对象,async返回一个Deferred( -一个轻量级、非阻塞的 future),而Deferred内部是继承了Job所以两者之间的差异并不是很大<br>使用协程时,需要给其指定协程所执行的上下文或环境(也可以说是在哪个线程),而0.20版本中提供了以下的默认环境<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//它里面定一个线程池，去处理你的代码块</span><br><span class="line">        CommonPool</span><br><span class="line">//无限制，就是当前什么线程就是什么线程。</span><br><span class="line">       Unconfined</span><br><span class="line">//安卓开发用的,用android的handler处理你的代码块，构造方法需要提供Handler</span><br><span class="line">        HandlerContext</span><br></pre></td></tr></table></figure></p>
+<p>正式使用协程<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">val fu = async(CommonPool  )&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">println(fu.isCancelled)//fu协程是否取消</span><br><span class="line"></span><br><span class="line">val obj = launch(Unconfined)&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">obj.cancel()//取消obj协程</span><br><span class="line"></span><br><span class="line">val UI = HandlerContext(Handler(Looper.getMainLooper()), &quot;UI&quot;)</span><br><span class="line">launch(UI)&#123;//这里就是运行在UI线程中了</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="集合类"><a href="#集合类" class="headerlink" title="集合类"></a>集合类</h2><p>kotlin中使用的集合类是java的集合类,虽然如此,kotlin还为其添加了很多便于开发者操作的方法/函数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">val list = arrayListOf(1,4,6,46)//这里的list其实就是java的ArrayList</span><br><span class="line">val map = hashMapOf(1 to &quot;one&quot;,4 to &quot;four&quot;)//这里的map是java的HashMap</span><br></pre></td></tr></table></figure></p>
+<h2 id="中缀调用"><a href="#中缀调用" class="headerlink" title="中缀调用"></a>中缀调用</h2><p>这个有一点点像C++中对运算符的重载的感觉,虽然表象上差距挺大的<br>像集合类中map中的to,这个就是个中缀调用,定义中缀调用函数的关键字是infix,他可以作用在普通函数(需要再一个类中的,顶层函数不可以)和扩展函数中且规定了其函数参数只能有一个,返回值可有可无<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">infix fun Int.infixTest(other:Int):Int &#123;//这里的定义了一个扩展函数,且支持中缀调用</span><br><span class="line">    println(this+other)</span><br><span class="line">    return this+other</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">c infixTest 3//中缀调用方式,其会返回c+3的和</span><br><span class="line">c.infixTest(3)//当然这样子也是可以的,效果是一样的</span><br></pre></td></tr></table></figure></p>
+<p>而kotlin中对Any提供了一个扩展函数to,其实现为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">infix fun Any.to(other:Any) = Pair(this,other)//Pair是kotlin标准库中的类,其存储了一个键值对,其实也就是两个元素,所以map初始化时可以使用to来定义每一个键值对</span><br></pre></td></tr></table></figure></p>
+<h2 id="字符串处理"><a href="#字符串处理" class="headerlink" title="字符串处理"></a>字符串处理</h2><p>kotlin的字符串处理也是使用了java的字符串处理,只不过kotlin还为其添加了很多易用的扩展函数,如获取字符串第一个或最后一个字符的函数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;12.654-A&quot;.split(&quot;.-&quot;.toRegex)//字符串分隔,这里使用Regex类型来解决一些字符问题</span><br><span class="line">&quot;12.654-A&quot;.split(&quot;.&quot;,&quot;-&quot;)//kotlin支持多个字符的切割</span><br><span class="line">&quot;&quot;&quot;/\.asd\&apos;&quot;&quot;&quot;//三重冒号也就是左右两边都是&quot;&quot;&quot;,被三重冒号包围的字符串为纯字符串,无任何的转义序列</span><br></pre></td></tr></table></figure></p>
+<h2 id="类委托"><a href="#类委托" class="headerlink" title="类委托"></a>类委托</h2><p>kotlin中提供了类委托的操作,关键字为by,这委托是在实现一个接口时,将实现部分委托给一个属性,使得本类成为一个中转的类<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">class ListTest&lt;T&gt; (val list : List&lt;T&gt; = ArrayList()) : List&lt;T&gt; by list&#123;这里的ListTest类实现了List,其实现部分委托给了list属性</span><br><span class="line">override fun add(value : T)&#123;//重写add方法</span><br><span class="line">println(value)</span><br><span class="line">list.add(value)</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="单例"><a href="#单例" class="headerlink" title="单例"></a>单例</h2><p>在kotlin中实现单例非常的方便,使用object关键字就可以实现<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">object Test5&#123;//定义</span><br><span class="line">val data = &quot;data&quot;</span><br><span class="line">fun printAll()&#123;</span><br><span class="line">println(data)</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">Test5.printAll()//调用单例</span><br></pre></td></tr></table></figure></p>
+<h2 id="伴生对象"><a href="#伴生对象" class="headerlink" title="伴生对象"></a>伴生对象</h2><p>伴生对象有点像java的静态方法,但kotlin中没有static这东西,而代替他的是使用顶层函数,但是顶层函数无法访问类的private成员,所以这是就需要伴生对象了,其关键字为companion,一般会配合object使用<br>并且伴生对象也支持扩展函数,一般可以声名一个空的伴生对象,留给之后扩展<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">class A&#123;</span><br><span class="line">companion object&#123;//定义伴生对象</span><br><span class="line">fun bar()&#123;</span><br><span class="line">println(&quot;伴生&quot;)</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">A.bar()//调用时,可以直接通过类型名调用</span><br><span class="line">interface ITest&#123;</span><br><span class="line">&#125;</span><br><span class="line">class B&#123;</span><br><span class="line">companion object My : ITest&#123;//定义伴生对象,并给个名字My,且可以实现接口</span><br><span class="line">fun bar()&#123;</span><br><span class="line">println(&quot;伴生&quot;)</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">B.My.bar()//调用时通过类名加伴生名字调用</span><br><span class="line">fun ITestTest(test:ITest)&#123;//此函数需要传入一个ITest</span><br><span class="line">&#125;</span><br><span class="line">ITestTest(B)//或者B.My</span><br></pre></td></tr></table></figure></p>
+<h2 id="let函数"><a href="#let函数" class="headerlink" title="let函数"></a>let函数</h2><p>let函数有点像groovy的闭包,使用let后,可在{}中通过it或自定义为其他参数来使用调用者<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var str :String? = &quot;666&quot;</span><br><span class="line">str?.let&#123;//此处会在str不为空的情况下,才调用let中的内容,否者不调用</span><br><span class="line">println(it.length)//此时使用的it其实就是str对象</span><br><span class="line">it.indexOf(1)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="lateinit-属性延时初始化"><a href="#lateinit-属性延时初始化" class="headerlink" title="lateinit 属性延时初始化"></a>lateinit 属性延时初始化</h2><p>在使用lateinit可以声名一个不为空的属性,且声名时不初始化,在之后再初始化,这里的属性需要为var,如果为val的话就必须在构造函数中初始化<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">private lateinit var data:String</span><br><span class="line"></span><br><span class="line">fun setData(s:String)&#123;</span><br><span class="line">data = s</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>如果在初始化之前就调用了data,那么就会报错..</p>
+<h2 id="by-lazy惰性初始化"><a href="#by-lazy惰性初始化" class="headerlink" title="by lazy惰性初始化"></a>by lazy惰性初始化</h2><p>这个与上面的latinit不太一样,by lazy()是在使用的时候在进行相关的初始化,且默认线程安全<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">class User(val name:String)&#123;</span><br><span class="line">var age by lazy&#123;</span><br><span class="line">loadAge()//此处为初始化的操作</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">var user =User(&quot;lewis_v&quot;)</span><br><span class="line">user.age//在此处调用age时才会进行age的初始化</span><br></pre></td></tr></table></figure></p>
+<h2 id="Nothing类型"><a href="#Nothing类型" class="headerlink" title="Nothing类型"></a>Nothing类型</h2><p>Nothing类型作为函数返回值,表示这个函数不会正常结束,也表明这个函数不会返回任何东西<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">fun fail(msg:String) : Nothing&#123;</span><br><span class="line">throw IllegalStateException(msg)</span><br><span class="line">&#125;</span><br><span class="line">fun fail(msg:String) : Nothing&#123;</span><br><span class="line">return 0//这里报错,不给编译,一定要出错才可以</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="运算符重载"><a href="#运算符重载" class="headerlink" title="运算符重载"></a>运算符重载</h2><p>kotlin的运算符重载与C++的类似,其关键字为operator,其可重载二元、一元、复合、比较运算符</p>
+<h3 id="二元"><a href="#二元" class="headerlink" title="二元"></a>二元</h3><p>二元的有*/%+-运算<br>其对应的重载方法为<br>表达式    ||    函数名</p>
+<ul>
+<li>||    times<br>/    ||    div<br>%    ||    mod</li>
+</ul>
+<ul>
+<li>||    plus</li>
+</ul>
+<ul>
+<li>||    minus</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">data class User(var age:Int)&#123;</span><br><span class="line">operator fun plus(other:User):User&#123;//重载+号,+号左边的为自身,右边的为other,其他符号与这个一样操作</span><br><span class="line">return Point(age + other.age)</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">User(5) + User(5) //此处的结果为User(10)</span><br></pre></td></tr></table></figure>
+<h3 id="复合"><a href="#复合" class="headerlink" title="复合"></a>复合</h3><p>复合的有+= -= *= /= %=<br>其重载的方法与其二元运算符差不多,在其基础上加上Assign即可,如+号为plusAssign,-号minusAssign<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">data class User(var age:Int)&#123;</span><br><span class="line">operator fun plusAssign(other:User):User&#123;//重载+=号,+=号左边的为自身,右边的为other,其他符号与这个一样操作</span><br><span class="line">return Point(age + other.age)</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">var user = User(5)</span><br><span class="line">user += User(5) //此处的结果user变为User(10)</span><br></pre></td></tr></table></figure></p>
+<h3 id="一元"><a href="#一元" class="headerlink" title="一元"></a>一元</h3><p>一元的有++ – + - !<br>其对应的重载方法为<br>表达式    ||    函数名<br>+a    ||    unaryPlus<br>-a    ||    unaryMinus<br>!a    ||    not<br>++a,a++    ||    inc<br>–a,a–    ||    dec<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">data class User(var age:Int)&#123;</span><br><span class="line">operator fun inc():User&#123;//重载++号,一元没有参数传入,只有对自己进行操作,其他符号与这个一样操作</span><br><span class="line">return Point(age + 1)</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">var user = User(5)</span><br><span class="line">user ++  //此处的结果user变为User(6)</span><br></pre></td></tr></table></figure></p>
+<h3 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h3><p>==为重写equals<br>其余的&gt; &lt; &gt;= &lt;=之类的比较需要实现Comparable,实现其中的方法compareTo,在比较时,会比较此方法返回数值的大小</p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>以上是前段时间学习kotlin的学习笔记,总的来说,kotlin使用上更加方便简洁,且内部已经提供了很多常用的操作如集合类的操作等等…</p>
+
+    </main>
+    <footer class="post-footer">
+      
+      
+    </footer>
+  </article>
+  
+  
+<div class="reward" id="reward">
+  <p>坚持原创技术分享，您的鼓励将是我继续前进的动力！</p>
+  <button id="reward-button" class="button" disable="enable">打赏</button>
+  <div id="qr" class="qr" style="display: none;">
+    
+    <div id="wechat">
+      <img id="wechat_qr" src="/images/WeChatPay.png" alt="微信支付"/>
+      <span>微信支付</span>
+    </div>
+    
+    
+    <div id="alipay">
+      <img id="alipay_qr" src="/images/AliPay.jpg" alt="支付宝"/>
+      <span>支付宝</span>
+    </div>
+    
+    
+  </div>
+</div>
+
+
+  
+  
+  <div class="post-nav">
+    
+    <div class="post-nav-next post-nav-item">
+      <a href="/2018/05/09/java阻塞队列/" rel="next" title="java阻塞队列">
+        <i class="fas fa-angle-left"></i>
+        <span class="nav-title">java阻塞队列</span>
+      </a>
+    </div>
+    
+    
+  </div>
+  
+  
+  
+
+<div class="comments" id="comments">
+  
+  
+  <div id="hypercomments_widget"></div>
+  
+  <script type="text/javascript">
+  _hcwp = window._hcwp || [];
+  _hcwp.push({ widget: "Bloggerstream", widget_id: 1, selector: ".hc-comment-count", label: "{\%COUNT%\}" });
+  
+  _hcwp.push({ widget:"Stream", widget_id: 1, xid: "2018/07/22/kotlin学习笔记/" });
+  
+  (function() {
+    if ("HC_LOAD_INIT" in window)
+      return;
+    HC_LOAD_INIT = true;
+    var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+    var hcc = document.createElement("script");
+    hcc.type = "text/javascript";
+    hcc.async = true;
+    hcc.src = ("https:" === document.location.protocol ? "https" : "http") + "://w.hypercomments.com/widget/hc/1/"+lang+"/widget.js";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hcc, s.nextSibling);
+  })();
+  </script>
+  
+</div>
+
+
+
+  
+</section>
+
+          </div>
+          
+          
+          
+<aside class="sidebar" id="sidebar">
+  
+  <div class="search">
+    <div class="form-group">
+      <i class="fas fa-search"></i> <input type="text" id="search-input" name="q" results="0" placeholder="搜索" class="form-control"/>
+    </div>
+  </div>
+  <div class="search-result-box" id="search-result"></div>
+  
+  
+<div class="info sidebar-item" id="info">
+  
+  <img class="author-avatar" src="/images/header.JPG" alt="lewis-v">
+  
+  <p class="author-name">lewis-v</p>
+  <p class="author-description"> I am time</p>
+  <div class="site-count">
+    
+    <div class="archives-count">
+      <p>归档</p>
+      <p><a href="/archives/">9</a></p>
+    </div>
+    
+    
+    
+    <span class="site-count-divider"> | </span>
+    
+    <div class="categories-count">
+      <p>分类</p>
+      <p><a href="/categories/">3</a></p>
+    </div>
+    
+    
+  </div>
+  
+  <div class="rss">
+    <a class="rss-link button sidebar-item" href="/atom.xml"><i class="fas fa-rss"></i> RSS</a>
+  </div>
+  
+</div>
+
+
+  <div class="sidebar-sticky">
+    
+    
+
+
+
+
+<hr>
+<div class="post-toc sidebar-item" id="toc-div">
+  <p><i class="fas fa-list-ol"></i> 文章目录</p>
+  <div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#基本语法"><span class="toc-text">基本语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#基本类型"><span class="toc-text">基本类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#定义包和导入包"><span class="toc-text">定义包和导入包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#定义函数"><span class="toc-text">定义函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#可变长度的参数"><span class="toc-text">可变长度的参数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#局部函数"><span class="toc-text">局部函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#局部参数定义"><span class="toc-text">局部参数定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#字符串模板"><span class="toc-text">字符串模板</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#if条件判断"><span class="toc-text">if条件判断</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null可空值"><span class="toc-text">null可空值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#类型检测及自动类型转换"><span class="toc-text">类型检测及自动类型转换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#for循环"><span class="toc-text">for循环</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#区间"><span class="toc-text">区间</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#while循环"><span class="toc-text">while循环</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#when表达式"><span class="toc-text">when表达式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#异常"><span class="toc-text">异常</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#相等比较"><span class="toc-text">==相等比较</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#类"><span class="toc-text">类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#定义类"><span class="toc-text">定义类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#属性"><span class="toc-text">属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#构造方法"><span class="toc-text">构造方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#类继承"><span class="toc-text">类继承</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#接口"><span class="toc-text">接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#可见性修饰符"><span class="toc-text">可见性修饰符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#data数据类"><span class="toc-text">data数据类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#enum枚举类"><span class="toc-text">enum枚举类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#扩展函数"><span class="toc-text">扩展函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#内部类-嵌套类"><span class="toc-text">内部类(嵌套类)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#密封类"><span class="toc-text">密封类</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#kotlin基础之后的"><span class="toc-text">kotlin基础之后的</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#协程"><span class="toc-text">协程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#协程的使用"><span class="toc-text">协程的使用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#集合类"><span class="toc-text">集合类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#中缀调用"><span class="toc-text">中缀调用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#字符串处理"><span class="toc-text">字符串处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#类委托"><span class="toc-text">类委托</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#单例"><span class="toc-text">单例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#伴生对象"><span class="toc-text">伴生对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#let函数"><span class="toc-text">let函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lateinit-属性延时初始化"><span class="toc-text">lateinit 属性延时初始化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#by-lazy惰性初始化"><span class="toc-text">by lazy惰性初始化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Nothing类型"><span class="toc-text">Nothing类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#运算符重载"><span class="toc-text">运算符重载</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#二元"><span class="toc-text">二元</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#复合"><span class="toc-text">复合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#一元"><span class="toc-text">一元</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#比较运算符"><span class="toc-text">比较运算符</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#小结"><span class="toc-text">小结</span></a></li></ol></li></ol></div>
+</div>
+
+
+
+    
+    
+    
+<hr>
+<div class="social-link sidebar-item">
+  <p><i class="far fa-address-card"></i> 社交链接</p>
+  <ul>
+    
+    <li><i class="fab fa-github"></i> <a href="https://github.com/" target="_blank">GitHub</a></li>
+    
+    <li><i class="fas fa-copyright"></i> <a href="https://blog.csdn.net/qq_38713396" target="_blank">CSDN</a></li>
+    
+  </ul>
+</div>
+
+
+    
+    
+    
+<hr>
+<div class="blogroll sidebar-item">
+  <p><i class="fas fa-link"></i> 友情链接</p>
+  <ul>
+    
+    <li><a href="https://developer.mozilla.org/" target="_blank">MDN</a></li>
+    
+    <li><a href="https://mozilla.github.io/nunjucks/" target="_blank">Nunjucks</a></li>
+    
+    <li><a href="http://stylus-lang.com/" target="_blank">Stylus</a></li>
+    
+  </ul>
+</div>
+
+
+    
+  </div>
+</aside>
+
+
+          
+        </div>
+      </div>
+    </main>
+    
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="back-to-top">
+      <a id="back-to-top"><i class="fas fa-angle-double-up"></i></a>
+    </div>
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="copyright">
+          <span class="author">lewis-v</span>
+          <span class="year"><i class="far fa-copyright"></i> 2018</span>
+          
+        </div>
+        
+        
+<div class="busuanzi">
+  <span id="busuanzi_container_site_pv"><i class="fas fa-eye"></i> <span id="busuanzi_value_site_pv"></span></span>
+  <span id="busuanzi_container_site_uv"><i class="fas fa-user"></i> <span id="busuanzi_value_site_uv"></span></span>
+  <span id="busuanzi_container_page_pv"><i class="far fa-file-alt"></i> <span id="busuanzi_value_page_pv"></span></span>
+</div>
+
+
+        
+      </div>
+      <div class="footer-right">
+        <div class="custom-info">
+          
+          托管于 <i class="fab fa-github-alt"></i> <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
+          
+        </div>
+        <div class="powered-by">
+          由 <a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank">ARIA</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  </body>
+</html>

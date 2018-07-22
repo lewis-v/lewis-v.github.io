@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-05-09T02:58:58.718Z</updated>
+  <updated>2018-07-22T03:31:22.226Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,29 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>kotlin学习笔记</title>
+    <link href="http://yoursite.com/2018/07/22/kotlin%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2018/07/22/kotlin学习笔记/</id>
+    <published>2018-07-22T03:29:36.000Z</published>
+    <updated>2018-07-22T03:31:22.226Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;以前android的开发大部分使用java开发,而由于kotlin的推出,公司也开始转向了使用kotlin,所以在这里记录下学习kotlin的笔记.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Kotlin" scheme="http://yoursite.com/categories/Kotlin/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>java阻塞队列</title>
     <link href="http://yoursite.com/2018/05/09/java%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97/"/>
     <id>http://yoursite.com/2018/05/09/java阻塞队列/</id>
     <published>2018-05-09T02:53:16.000Z</published>
-    <updated>2018-05-09T02:58:58.718Z</updated>
+    <updated>2018-05-09T06:49:56.496Z</updated>
     
     <summary type="html">
     
